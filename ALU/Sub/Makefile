@@ -15,4 +15,4 @@ wave: plot.ghw
 .PHONY: clean
 
 clean:
-	rm -f *.o *.ghw *.cf test_adder
+	rm -f *.o *.ghw *.cf test_sub

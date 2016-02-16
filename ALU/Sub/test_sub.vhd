@@ -31,7 +31,7 @@ begin
                 Yin <= std_logic_vector(to_signed(Y,Yin'length));
                 ExpMin := std_logic_vector(to_signed(X-Y,ExpMin'length));
                 wait for 5 ns;
-                assert(ExpMin = Minus) report "Sum error when X=" & integer'image(X) & ", Y=" & integer'image(Y) severity error;
+                assert(ExpMin = Minus) report "Minus error when X=" & integer'image(X) & ", Y=" & integer'image(Y) severity error;
                 Y := Y + 1;
             end loop inner;
 
