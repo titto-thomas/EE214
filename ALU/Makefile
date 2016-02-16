@@ -19,4 +19,4 @@ wave: plot.ghw
 .PHONY: clean
 
 clean:
-	rm -f *.o *.ghw *.cf test_alu
+	rm -f *.o *.ghw *.cf test_alu scan.txt
