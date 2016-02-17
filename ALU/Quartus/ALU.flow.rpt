@@ -1,0 +1,123 @@
+Flow report for ALU
+Wed Feb 17 18:48:28 2016
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------+
+; Flow Summary                                                         ;
++---------------------------+------------------------------------------+
+; Flow Status               ; Successful - Wed Feb 17 18:48:28 2016    ;
+; Quartus II 32-bit Version ; 12.0 Build 178 05/31/2012 SJ Web Edition ;
+; Revision Name             ; ALU                                      ;
+; Top-level Entity Name     ; alu                                      ;
+; Family                    ; MAX V                                    ;
+; Device                    ; 5M1270ZT144C5                            ;
+; Timing Models             ; Final                                    ;
+; Total logic elements      ; 88 / 1,270 ( 7 % )                       ;
+; Total pins                ; 26 / 114 ( 23 % )                        ;
+; Total virtual pins        ; 0                                        ;
+; UFM blocks                ; 0 / 1 ( 0 % )                            ;
++---------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/17/2016 18:48:16 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; ALU                 ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                      ;
++--------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 123633795166480.145571509617416 ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; test_alu       ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test_alu                        ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; ../test_alu.vhd                 ; --            ; --          ; test_alu       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; test_alu                        ; --            ; --          ; test_alu       ;
+; EDA_TEST_BENCH_NAME                  ; test_alu                        ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                               ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; No Heat Sink With Still Air     ; --            ; --          ; --             ;
++--------------------------------------+---------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; --                  ; 00:00:02                           ;
+; Fitter                    ; 00:00:02     ; 1.0                     ; --                  ; 00:00:02                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; --                  ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; --                  ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; --                  ; 00:00:01                           ;
+; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:07                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                               ;
++---------------------------+------------------+------------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name          ; OS Version ; Processor type ;
++---------------------------+------------------+------------------+------------+----------------+
+; Analysis & Synthesis      ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
+; Fitter                    ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
+; Assembler                 ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
+; TimeQuest Timing Analyzer ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
+; EDA Netlist Writer        ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
++---------------------------+------------------+------------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+quartus_fit --read_settings_files=off --write_settings_files=off ALU -c ALU
+quartus_asm --read_settings_files=off --write_settings_files=off ALU -c ALU
+quartus_sta ALU -c ALU
+quartus_eda --read_settings_files=off --write_settings_files=off ALU -c ALU
+
+
+

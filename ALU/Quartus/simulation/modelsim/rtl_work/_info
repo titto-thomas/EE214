@@ -1,0 +1,301 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/titto/Desktop/EE214/ALU/Quartus/simulation/modelsim
+Eadder
+Z1 w1455699988
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/titto/Desktop/EE214/ALU/Quartus/simulation/modelsim
+Z6 8/home/titto/Desktop/EE214/ALU/Adder/adder.vhd
+Z7 F/home/titto/Desktop/EE214/ALU/Adder/adder.vhd
+l0
+L5
+VmT3DMX?Eb@4cbPO2znR`72
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1455715115.115578
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/Adder/adder.vhd|
+Z11 !s107 /home/titto/Desktop/EE214/ALU/Adder/adder.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 FCeXLa7<Qoi1V<>Q8`:zO1
+!i10b 1
+Aadder_hw
+R2
+R3
+R4
+DEx4 work 5 adder 0 22 mT3DMX?Eb@4cbPO2znR`72
+l22
+L12
+V];XCZTh6Hd??mkD4G>9dd3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 @k^FeH]E1h0l><[8PekiS3
+!i10b 1
+Ealu
+R1
+R2
+R3
+R4
+R5
+Z14 8/home/titto/Desktop/EE214/ALU/alu.vhd
+Z15 F/home/titto/Desktop/EE214/ALU/alu.vhd
+l0
+L5
+VM`?>?IFj`NjmEla:jk;3I0
+R8
+31
+Z16 !s108 1455715115.186287
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/alu.vhd|
+Z18 !s107 /home/titto/Desktop/EE214/ALU/alu.vhd|
+R12
+R13
+!s100 g05ha`AYnJ<icWzV0ZUMg2
+!i10b 1
+Aalu_hw
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 M`?>?IFj`NjmEla:jk;3I0
+l45
+L13
+V=k9VV:;O?k:71CkQIE0o>0
+R8
+31
+R16
+R17
+R18
+R12
+R13
+!s100 T]=g`m0<e6AYgceCQoF2=0
+!i10b 1
+Efa
+R1
+R2
+R3
+R4
+R5
+Z19 8/home/titto/Desktop/EE214/ALU/Adder/FA.vhd
+Z20 F/home/titto/Desktop/EE214/ALU/Adder/FA.vhd
+l0
+L5
+VJTZZf4aHWPgim@nKL2DX72
+R8
+31
+Z21 !s108 1455715115.149429
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/Adder/FA.vhd|
+Z23 !s107 /home/titto/Desktop/EE214/ALU/Adder/FA.vhd|
+R12
+R13
+!s100 [3ocZcand6gLko59UNcYd3
+!i10b 1
+Afa_hw
+R2
+R3
+R4
+DEx4 work 2 fa 0 22 JTZZf4aHWPgim@nKL2DX72
+l15
+L12
+VBe[T66R8_7^3jcFACa<D_1
+R8
+31
+R21
+R22
+R23
+R12
+R13
+!s100 >ac4Dc>20EzmTTJdfHcK73
+!i10b 1
+Elshift
+R1
+R2
+R3
+R4
+R5
+Z24 8/home/titto/Desktop/EE214/ALU/lShift/lshift.vhd
+Z25 F/home/titto/Desktop/EE214/ALU/lShift/lshift.vhd
+l0
+L5
+VNU:<Y1nkC;nXQRH3=lUL:1
+R8
+31
+Z26 !s108 1455715115.024242
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/lShift/lshift.vhd|
+Z28 !s107 /home/titto/Desktop/EE214/ALU/lShift/lshift.vhd|
+R12
+R13
+!s100 PhKEIX_B>=::[d96NnGFD1
+!i10b 1
+Alshift_hw
+R2
+R3
+R4
+DEx4 work 6 lshift 0 22 NU:<Y1nkC;nXQRH3=lUL:1
+l22
+L12
+Vm4l]5=P@X?I8FAabKO5702
+R8
+31
+R26
+R27
+R28
+R12
+R13
+!s100 ^>G;Yc`;0NlV673:AGPHL1
+!i10b 1
+Emux
+R1
+R2
+R3
+R4
+R5
+Z29 8/home/titto/Desktop/EE214/ALU/rShift/mux.vhd
+Z30 F/home/titto/Desktop/EE214/ALU/rShift/mux.vhd
+l0
+L5
+VD_6iSmTF0P]YZdc;nje_K1
+R8
+31
+Z31 !s108 1455715114.952544
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/rShift/mux.vhd|
+Z33 !s107 /home/titto/Desktop/EE214/ALU/rShift/mux.vhd|
+R12
+R13
+!s100 bjbkRT7aBVkaB^V>GZXVR3
+!i10b 1
+Amux_hw
+R2
+R3
+R4
+DEx4 work 3 mux 0 22 D_6iSmTF0P]YZdc;nje_K1
+l14
+L12
+VBF3Gc=b<A2[hZM5`LSNKn0
+R8
+31
+R31
+R32
+R33
+R12
+R13
+!s100 0oUm_emm?kYEBgI8f<Tj;3
+!i10b 1
+Ershift
+R1
+R2
+R3
+R4
+R5
+Z34 8/home/titto/Desktop/EE214/ALU/rShift/rshift.vhd
+Z35 F/home/titto/Desktop/EE214/ALU/rShift/rshift.vhd
+l0
+L5
+V[I[;T9OiDZgD32DGnA8GP2
+R8
+31
+Z36 !s108 1455715114.989380
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/rShift/rshift.vhd|
+Z38 !s107 /home/titto/Desktop/EE214/ALU/rShift/rshift.vhd|
+R12
+R13
+!s100 `nhP:c?fzoLFmARF3X=7P3
+!i10b 1
+Arshift_hw
+R2
+R3
+R4
+DEx4 work 6 rshift 0 22 [I[;T9OiDZgD32DGnA8GP2
+l22
+L12
+V_UmgAXGVIj0LKnI<Q8o1l3
+R8
+31
+R36
+R37
+R38
+R12
+R13
+!s100 R3_LKjgE]WCKNmgEj;GHO1
+!i10b 1
+Esub
+R1
+R2
+R3
+R4
+R5
+Z39 8/home/titto/Desktop/EE214/ALU/Sub/sub.vhd
+Z40 F/home/titto/Desktop/EE214/ALU/Sub/sub.vhd
+l0
+L5
+V5;HDYUKOCM]l8<@7dd<8I0
+R8
+31
+Z41 !s108 1455715115.062626
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/Sub/sub.vhd|
+Z43 !s107 /home/titto/Desktop/EE214/ALU/Sub/sub.vhd|
+R12
+R13
+!s100 @9IbbmQlJdcD<Ta]6GY^J3
+!i10b 1
+Asub_hw
+R2
+R3
+R4
+DEx4 work 3 sub 0 22 5;HDYUKOCM]l8<@7dd<8I0
+l23
+L12
+V6aISXJ<XM1i80RAlHdEDl3
+R8
+31
+R41
+R42
+R43
+R12
+R13
+!s100 XTW<z_X6:`1E>bh^i]P9G0
+!i10b 1
+Etest_alu
+R1
+R2
+R3
+R4
+R5
+Z44 8/home/titto/Desktop/EE214/ALU/Quartus/../test_alu.vhd
+Z45 F/home/titto/Desktop/EE214/ALU/Quartus/../test_alu.vhd
+l0
+L7
+VIAVHTGd;]A>Q`FCRgfciS3
+!s100 `L6i>?KW9=@DOAR^^aZGo1
+R8
+31
+!i10b 1
+Z46 !s108 1455715115.224350
+Z47 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/ALU/Quartus/../test_alu.vhd|
+Z48 !s107 /home/titto/Desktop/EE214/ALU/Quartus/../test_alu.vhd|
+R12
+R13
+Atest_hw
+R2
+R3
+R4
+DEx4 work 8 test_alu 0 22 IAVHTGd;]A>Q`FCRgfciS3
+l67
+L10
+VN>CAja7VDC@?aeIhRW0W^3
+!s100 ?mX33I7N2DV2d7B05OSAW2
+R8
+31
+!i10b 1
+R46
+R47
+R48
+R12
+R13
