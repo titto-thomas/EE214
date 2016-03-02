@@ -1,0 +1,30 @@
+
+State Machine - |StringRecognizer|terror_current_state
+Name terror_current_state.S5 terror_current_state.S4 terror_current_state.S3 terror_current_state.S2 terror_current_state.S1 terror_current_state.S0 
+terror_current_state.S0 0 0 0 0 0 0 
+terror_current_state.S1 0 0 0 0 1 1 
+terror_current_state.S2 0 0 0 1 0 1 
+terror_current_state.S3 0 0 1 0 0 1 
+terror_current_state.S4 0 1 0 0 0 1 
+terror_current_state.S5 1 0 0 0 0 1 
+
+State Machine - |StringRecognizer|gun_current_state
+Name gun_current_state.S2 gun_current_state.S1 gun_current_state.S0 
+gun_current_state.S0 0 0 0 
+gun_current_state.S1 0 1 1 
+gun_current_state.S2 1 0 1 
+
+State Machine - |StringRecognizer|knife_current_state
+Name knife_current_state.S4 knife_current_state.S3 knife_current_state.S2 knife_current_state.S1 knife_current_state.S0 
+knife_current_state.S0 0 0 0 0 0 
+knife_current_state.S1 0 0 0 1 1 
+knife_current_state.S2 0 0 1 0 1 
+knife_current_state.S3 0 1 0 0 1 
+knife_current_state.S4 1 0 0 0 1 
+
+State Machine - |StringRecognizer|bomb_current_state
+Name bomb_current_state.S3 bomb_current_state.S2 bomb_current_state.S1 bomb_current_state.S0 
+bomb_current_state.S0 0 0 0 0 
+bomb_current_state.S1 0 0 1 1 
+bomb_current_state.S2 0 1 0 1 
+bomb_current_state.S3 1 0 0 1 

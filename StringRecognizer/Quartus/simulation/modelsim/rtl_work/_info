@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/titto/Desktop/EE214/StringRecognizer/Quartus/simulation/modelsim
+Estringrecognizer
+Z1 w1456928033
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/home/titto/Desktop/EE214/StringRecognizer/StringRecognizer.vhd
+Z6 F/home/titto/Desktop/EE214/StringRecognizer/StringRecognizer.vhd
+l0
+L5
+V`FF7b4D0DIGbNNTgMcR6`1
+!s100 <1ZV`823lD01@W=J^3Dkd2
+Z7 OV;C;10.3c;59
+31
+Z8 !s110 1456945798
+!i10b 1
+Z9 !s108 1456945798.646802
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/StringRecognizer/StringRecognizer.vhd|
+Z11 !s107 /home/titto/Desktop/EE214/StringRecognizer/StringRecognizer.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Astringrecognizer_hw
+R2
+R3
+R4
+DEx4 work 16 stringrecognizer 0 22 `FF7b4D0DIGbNNTgMcR6`1
+l29
+L13
+Vi4oT2R^BMEKn7UciNI1Y41
+!s100 i=[Oce6mIAEAgU8_115_71
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etest_stringrecognizer
+Z14 w1456930542
+R2
+R3
+R4
+R0
+Z15 8/home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd
+Z16 F/home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd
+l0
+L7
+VFXddS5XXCBILITc5cF0Fi1
+!s100 Z]_9zFdUT47g<GFXRWhCg2
+R7
+31
+R8
+!i10b 1
+Z17 !s108 1456945798.698434
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd|
+Z19 !s107 /home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd|
+!i113 1
+R12
+R13
+Atest_hw
+R2
+R3
+R4
+DEx4 work 21 test_stringrecognizer 0 22 FXddS5XXCBILITc5cF0Fi1
+l60
+L10
+V;6eLconfGb2?Y^RD>BnPE1
+!s100 ^gM2To]SIGolS2>WC^E5e1
+R7
+31
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
