@@ -61,24 +61,32 @@ begin
 
 DUT : StringRecognizer port map (X(4),X(3),X(2),X(1),X(0), W, clk, reset);
 
-clk <= not clk after 5 ns;
+clk <= not clk after 50 ns;
 
 checking : process
     file   infile    : text is in  "input.txt";   --declare input file
+    file   outfile    : text open write_mode is  "output.txt";   --declare output file
     variable  inline    : line; --line number declaration
+    variable  inline_dummy   : line; --line number declaration
+    variable  outline    : line; --line number declaration
     variable  string_char    : character;
+    variable  string_out_char    : character;
     variable string_read_success : boolean;
+    variable string_write_success : boolean;
+    variable string_out : string (1 to string_max_size+1) := (others => ' ');
 begin
 
 reset <= '1';
 
-wait for 20 ns;
+wait for 220 ns;
 
 reset <= '0';
 while not endfile(infile) loop
 
           -- read digital data from input file 
 	readline(infile, inline);
+	inline_dummy := inline;
+	writeline(outfile, inline_dummy);
 	for i in 0 to string_max_size loop
 		read(inline, string_char, string_read_success);
 		if not string_read_success then -- found end of line 
@@ -86,8 +94,15 @@ while not endfile(infile) loop
 		end if;
 		X <= to_std_logic_vector(string_char);
 		wait until clk'event and clk = '0';
+		if (W = '1') then
+			string_out_char := 'y';
+		else
+			string_out_char := 'n';
+		end if;
+		string_out(i+1) := string_out_char;
 	end loop;
-
+	write(outline, string_out);
+	writeline(outfile, outline);
 end loop;
 
 end process checking;

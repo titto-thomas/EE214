@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/titto/Desktop/EE214/StringRecognizer/Quartus/simulation/modelsim
 Estringrecognizer
-Z1 w1456945328
+Z1 w1457634841
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx4 maxv 14 maxv_atom_pack 0 22 @K`j[on8UWIAS_=<a^6FU0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -21,13 +21,13 @@ Z8 8StringRecognizer.vho
 Z9 FStringRecognizer.vho
 l0
 L35
-VHRObV6T67b:@2aQza[AC_0
-!s100 Vze7j4neQ`K@1LTC;^z5R3
+VIUH^fHTK][eFoJ562ooFC1
+!s100 cWfNkT>z@fTF1I2zJB>Uo2
 Z10 OV;C;10.3c;59
 31
-Z11 !s110 1456945962
+Z11 !s110 1457634948
 !i10b 1
-Z12 !s108 1456945962.547075
+Z12 !s108 1457634948.676863
 Z13 !s90 -reportprogress|300|-93|-work|work|StringRecognizer.vho|
 Z14 !s107 StringRecognizer.vho|
 !i113 1
@@ -40,11 +40,11 @@ R4
 R5
 R6
 R7
-DEx4 work 16 stringrecognizer 0 22 HRObV6T67b:@2aQza[AC_0
+DEx4 work 16 stringrecognizer 0 22 IUH^fHTK][eFoJ562ooFC1
 l143
 L59
-VPOSkL<hmOPicOGfSPb4nC1
-!s100 9m5196R74T7Y7GgKZ?im70
+VK4`RF;fhAn1k6AoMd9]Kl3
+!s100 ?:d3a?[K2_n]iWBIDXQlP3
 R10
 31
 R11
@@ -56,7 +56,7 @@ R14
 R15
 R16
 Etest_stringrecognizer
-Z17 w1456930542
+Z17 w1457634689
 Z18 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R6
 R7
@@ -71,7 +71,7 @@ R10
 31
 R11
 !i10b 1
-Z21 !s108 1456945962.700285
+Z21 !s108 1457634948.771035
 Z22 !s90 -reportprogress|300|-93|-work|work|/home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd|
 Z23 !s107 /home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd|
 !i113 1
@@ -84,8 +84,8 @@ R7
 DEx4 work 21 test_stringrecognizer 0 22 FXddS5XXCBILITc5cF0Fi1
 l60
 L10
-V;6eLconfGb2?Y^RD>BnPE1
-!s100 ^gM2To]SIGolS2>WC^E5e1
+Vi17Wc<^lK^?MeT;In>dC93
+!s100 2RZLKcMU166Vn3<8<gTPV1
 R10
 31
 R11

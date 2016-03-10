@@ -3,11 +3,11 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'clk'
-Slack : -4.766
-TNS   : -67.813
+Slack : -4.931
+TNS   : -71.634
 
 Type  : Hold 'clk'
-Slack : 1.950
+Slack : 1.711
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'clk'

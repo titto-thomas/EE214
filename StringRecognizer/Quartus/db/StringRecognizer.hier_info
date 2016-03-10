@@ -54,11 +54,13 @@ X0 => Equal7.IN1
 X0 => Equal8.IN2
 X0 => Equal9.IN4
 X0 => Equal10.IN2
-W <= W.DB_MAX_OUTPUT_PORT_TYPE
+W << W~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => W~reg0.CLK
 clk => terror_current_state~1.DATAIN
 clk => gun_current_state~1.DATAIN
 clk => knife_current_state~1.DATAIN
 clk => bomb_current_state~1.DATAIN
+reset => W.OUTPUTSELECT
 reset => bomb_current_state.OUTPUTSELECT
 reset => bomb_current_state.OUTPUTSELECT
 reset => bomb_current_state.OUTPUTSELECT

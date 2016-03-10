@@ -7,7 +7,7 @@ ghdl: StringRecognizer.vhd test_StringRecognizer.vhd
 	ghdl -a StringRecognizer.vhd
 	ghdl -a test_StringRecognizer.vhd
 	ghdl -m test_stringrecognizer
-	./test_stringrecognizer --stop-time=1000ns --wave=plot.ghw
+	./test_stringrecognizer --stop-time=100us --wave=plot.ghw
 
 wave: plot.ghw
 	gtkwave plot.ghw

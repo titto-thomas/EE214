@@ -57,6 +57,6 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STI
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH test_StringRecognizer -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME test_StringRecognizer -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_StringRecognizer
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME DUT -section_id test_StringRecognizer
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_StringRecognizer -section_id test_StringRecognizer
 set_global_assignment -name EDA_TEST_BENCH_FILE ../test_StringRecognizer.vhd -section_id test_StringRecognizer

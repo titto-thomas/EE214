@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for StringRecognizer
-Thu Mar  3 00:32:04 2016
+Fri Mar 11 00:03:58 2016
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -23,14 +23,12 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  15. Hold Times
  16. Clock to Output Times
  17. Minimum Clock to Output Times
- 18. Propagation Delay
- 19. Minimum Propagation Delay
- 20. Setup Transfers
- 21. Hold Transfers
- 22. Report TCCS
- 23. Report RSKM
- 24. Unconstrained Paths
- 25. TimeQuest Timing Analyzer Messages
+ 18. Setup Transfers
+ 19. Hold Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
 
 
 
@@ -92,7 +90,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 173.43 MHz ; 173.43 MHz      ; clk        ;      ;
+; 168.61 MHz ; 168.61 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -102,7 +100,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -4.766 ; -67.813       ;
+; clk   ; -4.931 ; -71.634       ;
 +-------+--------+---------------+
 
 
@@ -111,7 +109,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 1.950 ; 0.000         ;
+; clk   ; 1.711 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -141,78 +139,81 @@ No paths to report.
 +--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
-; -4.766 ; terror_current_state.S0 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 5.433      ;
-; -4.765 ; terror_current_state.S0 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 5.432      ;
-; -4.763 ; terror_current_state.S0 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 5.430      ;
-; -4.635 ; knife_current_state.S3  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.302      ;
-; -4.629 ; knife_current_state.S3  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.296      ;
-; -4.619 ; knife_current_state.S4  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.286      ;
-; -4.613 ; knife_current_state.S4  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.280      ;
-; -4.597 ; knife_current_state.S2  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.264      ;
-; -4.501 ; knife_current_state.S0  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.168      ;
-; -4.495 ; knife_current_state.S0  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.162      ;
-; -4.384 ; knife_current_state.S2  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.051      ;
-; -4.378 ; knife_current_state.S2  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.045      ;
-; -4.347 ; knife_current_state.S3  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.014      ;
-; -4.331 ; knife_current_state.S4  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.998      ;
-; -4.158 ; knife_current_state.S2  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.825      ;
-; -4.085 ; terror_current_state.S5 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.752      ;
-; -4.084 ; terror_current_state.S5 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.751      ;
-; -4.082 ; terror_current_state.S5 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.749      ;
-; -4.078 ; knife_current_state.S1  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.745      ;
-; -4.072 ; knife_current_state.S1  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.739      ;
-; -4.048 ; bomb_current_state.S1   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.715      ;
-; -3.984 ; terror_current_state.S3 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.651      ;
-; -3.983 ; terror_current_state.S3 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.650      ;
-; -3.981 ; terror_current_state.S3 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.648      ;
-; -3.975 ; bomb_current_state.S2   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.642      ;
-; -3.936 ; knife_current_state.S3  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.603      ;
-; -3.927 ; terror_current_state.S4 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.594      ;
-; -3.926 ; terror_current_state.S4 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.593      ;
-; -3.924 ; terror_current_state.S4 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.591      ;
-; -3.920 ; knife_current_state.S4  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.587      ;
-; -3.908 ; knife_current_state.S3  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.575      ;
-; -3.892 ; knife_current_state.S4  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.559      ;
-; -3.865 ; bomb_current_state.S3   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.532      ;
-; -3.859 ; bomb_current_state.S3   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.526      ;
-; -3.840 ; terror_current_state.S1 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.507      ;
-; -3.839 ; terror_current_state.S1 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.506      ;
-; -3.837 ; terror_current_state.S1 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.504      ;
-; -3.802 ; knife_current_state.S0  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.469      ;
-; -3.778 ; knife_current_state.S0  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.445      ;
-; -3.685 ; knife_current_state.S2  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.352      ;
-; -3.668 ; bomb_current_state.S2   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.335      ;
-; -3.619 ; bomb_current_state.S1   ; bomb_current_state.S0   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.286      ;
-; -3.546 ; bomb_current_state.S2   ; bomb_current_state.S0   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.213      ;
-; -3.506 ; terror_current_state.S2 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.173      ;
-; -3.505 ; terror_current_state.S2 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.172      ;
-; -3.503 ; terror_current_state.S2 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.170      ;
-; -3.496 ; bomb_current_state.S0   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.163      ;
-; -3.490 ; bomb_current_state.S0   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.157      ;
-; -3.433 ; bomb_current_state.S3   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.100      ;
-; -3.430 ; bomb_current_state.S3   ; bomb_current_state.S0   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.097      ;
-; -3.379 ; knife_current_state.S1  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.046      ;
-; -3.339 ; knife_current_state.S0  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.006      ;
-; -3.248 ; terror_current_state.S0 ; terror_current_state.S0 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.915      ;
-; -3.236 ; bomb_current_state.S2   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.903      ;
-; -3.202 ; gun_current_state.S1    ; gun_current_state.S2    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.869      ;
-; -3.064 ; bomb_current_state.S0   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.731      ;
-; -3.061 ; bomb_current_state.S0   ; bomb_current_state.S0   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.728      ;
-; -3.057 ; bomb_current_state.S1   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.724      ;
-; -3.040 ; bomb_current_state.S1   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.707      ;
-; -3.001 ; gun_current_state.S0    ; gun_current_state.S2    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.668      ;
-; -2.913 ; gun_current_state.S1    ; gun_current_state.S1    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.580      ;
-; -2.778 ; terror_current_state.S3 ; terror_current_state.S4 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.445      ;
-; -2.618 ; gun_current_state.S2    ; gun_current_state.S1    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.285      ;
-; -2.617 ; gun_current_state.S2    ; gun_current_state.S0    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.284      ;
-; -2.573 ; gun_current_state.S0    ; gun_current_state.S1    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.240      ;
-; -2.403 ; gun_current_state.S0    ; gun_current_state.S0    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.070      ;
-; -2.225 ; gun_current_state.S2    ; gun_current_state.S2    ; clk          ; clk         ; 1.000        ; 0.000      ; 2.892      ;
-; -2.158 ; terror_current_state.S5 ; terror_current_state.S0 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.825      ;
-; -1.841 ; terror_current_state.S2 ; terror_current_state.S3 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.508      ;
-; -1.721 ; terror_current_state.S4 ; terror_current_state.S4 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.388      ;
-; -1.718 ; gun_current_state.S1    ; gun_current_state.S0    ; clk          ; clk         ; 1.000        ; 0.000      ; 2.385      ;
-; -1.698 ; terror_current_state.S3 ; terror_current_state.S3 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.365      ;
+; -4.931 ; knife_current_state.S4  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.598      ;
+; -4.688 ; knife_current_state.S4  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.355      ;
+; -4.678 ; terror_current_state.S1 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 5.345      ;
+; -4.671 ; terror_current_state.S1 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 5.338      ;
+; -4.666 ; knife_current_state.S2  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.333      ;
+; -4.568 ; terror_current_state.S0 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 5.235      ;
+; -4.561 ; terror_current_state.S0 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 5.228      ;
+; -4.504 ; knife_current_state.S4  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.171      ;
+; -4.454 ; knife_current_state.S0  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.121      ;
+; -4.425 ; knife_current_state.S0  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.092      ;
+; -4.380 ; knife_current_state.S2  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.047      ;
+; -4.326 ; knife_current_state.S3  ; knife_current_state.S4  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.993      ;
+; -4.281 ; knife_current_state.S4  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.948      ;
+; -4.239 ; knife_current_state.S2  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.906      ;
+; -4.229 ; knife_current_state.S3  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.896      ;
+; -4.201 ; terror_current_state.S1 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.868      ;
+; -4.189 ; knife_current_state.S1  ; knife_current_state.S2  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.856      ;
+; -4.091 ; terror_current_state.S0 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.758      ;
+; -4.071 ; terror_current_state.S4 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.738      ;
+; -4.064 ; terror_current_state.S4 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.731      ;
+; -4.057 ; knife_current_state.S4  ; W~reg0                  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.724      ;
+; -4.047 ; knife_current_state.S0  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.714      ;
+; -4.037 ; bomb_current_state.S1   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.704      ;
+; -4.029 ; bomb_current_state.S1   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.696      ;
+; -4.023 ; terror_current_state.S5 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.690      ;
+; -4.016 ; terror_current_state.S5 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.683      ;
+; -3.998 ; knife_current_state.S0  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.665      ;
+; -3.973 ; knife_current_state.S2  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.640      ;
+; -3.899 ; knife_current_state.S3  ; knife_current_state.S0  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.566      ;
+; -3.855 ; knife_current_state.S4  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.522      ;
+; -3.822 ; knife_current_state.S3  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.489      ;
+; -3.782 ; knife_current_state.S1  ; knife_current_state.S3  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.449      ;
+; -3.750 ; bomb_current_state.S1   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.417      ;
+; -3.656 ; terror_current_state.S3 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.323      ;
+; -3.649 ; terror_current_state.S3 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.316      ;
+; -3.621 ; knife_current_state.S0  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.288      ;
+; -3.594 ; terror_current_state.S4 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.261      ;
+; -3.547 ; knife_current_state.S2  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.214      ;
+; -3.546 ; terror_current_state.S5 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 4.213      ;
+; -3.521 ; bomb_current_state.S2   ; bomb_current_state.S0   ; clk          ; clk         ; 1.000        ; 0.000      ; 4.188      ;
+; -3.475 ; bomb_current_state.S3   ; W~reg0                  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.142      ;
+; -3.441 ; gun_current_state.S0    ; gun_current_state.S2    ; clk          ; clk         ; 1.000        ; 0.000      ; 4.108      ;
+; -3.431 ; terror_current_state.S5 ; W~reg0                  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.098      ;
+; -3.396 ; knife_current_state.S3  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.063      ;
+; -3.356 ; knife_current_state.S1  ; knife_current_state.S1  ; clk          ; clk         ; 1.000        ; 0.000      ; 4.023      ;
+; -3.331 ; gun_current_state.S2    ; gun_current_state.S2    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.998      ;
+; -3.291 ; terror_current_state.S2 ; terror_current_state.S5 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.958      ;
+; -3.284 ; terror_current_state.S2 ; terror_current_state.S1 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.951      ;
+; -3.228 ; bomb_current_state.S2   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.895      ;
+; -3.220 ; bomb_current_state.S2   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.887      ;
+; -3.179 ; terror_current_state.S3 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.846      ;
+; -3.017 ; bomb_current_state.S0   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.684      ;
+; -3.009 ; bomb_current_state.S0   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.676      ;
+; -2.941 ; bomb_current_state.S2   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.608      ;
+; -2.925 ; bomb_current_state.S3   ; bomb_current_state.S2   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.592      ;
+; -2.917 ; bomb_current_state.S3   ; bomb_current_state.S3   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.584      ;
+; -2.836 ; gun_current_state.S0    ; gun_current_state.S1    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.503      ;
+; -2.834 ; gun_current_state.S0    ; gun_current_state.S0    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.501      ;
+; -2.814 ; terror_current_state.S2 ; terror_current_state.S2 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.481      ;
+; -2.801 ; gun_current_state.S2    ; W~reg0                  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.468      ;
+; -2.769 ; terror_current_state.S4 ; terror_current_state.S4 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.436      ;
+; -2.756 ; gun_current_state.S1    ; gun_current_state.S2    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.423      ;
+; -2.750 ; gun_current_state.S2    ; gun_current_state.S0    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.417      ;
+; -2.717 ; gun_current_state.S1    ; gun_current_state.S1    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.384      ;
+; -2.715 ; terror_current_state.S3 ; terror_current_state.S4 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.382      ;
+; -2.646 ; terror_current_state.S0 ; terror_current_state.S0 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.313      ;
+; -2.597 ; terror_current_state.S5 ; terror_current_state.S0 ; clk          ; clk         ; 1.000        ; 0.000      ; 3.264      ;
+; -2.551 ; bomb_current_state.S0   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.218      ;
+; -2.459 ; bomb_current_state.S3   ; bomb_current_state.S1   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.126      ;
+; -2.286 ; gun_current_state.S2    ; gun_current_state.S1    ; clk          ; clk         ; 1.000        ; 0.000      ; 2.953      ;
+; -2.252 ; gun_current_state.S1    ; gun_current_state.S0    ; clk          ; clk         ; 1.000        ; 0.000      ; 2.919      ;
+; -2.208 ; bomb_current_state.S1   ; bomb_current_state.S0   ; clk          ; clk         ; 1.000        ; 0.000      ; 2.875      ;
+; -1.941 ; bomb_current_state.S0   ; bomb_current_state.S0   ; clk          ; clk         ; 1.000        ; 0.000      ; 2.608      ;
+; -1.905 ; terror_current_state.S3 ; terror_current_state.S3 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.572      ;
+; -1.265 ; terror_current_state.S2 ; terror_current_state.S3 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.932      ;
 +--------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -221,78 +222,81 @@ No paths to report.
 +-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
-; 1.950 ; terror_current_state.S2 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.171      ;
-; 2.144 ; terror_current_state.S3 ; terror_current_state.S3 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.365      ;
-; 2.145 ; knife_current_state.S0  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.366      ;
-; 2.146 ; knife_current_state.S2  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.367      ;
-; 2.155 ; knife_current_state.S4  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.376      ;
-; 2.164 ; gun_current_state.S1    ; gun_current_state.S0    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.385      ;
-; 2.167 ; terror_current_state.S4 ; terror_current_state.S4 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.388      ;
-; 2.212 ; knife_current_state.S3  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.433      ;
-; 2.230 ; knife_current_state.S1  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.451      ;
-; 2.240 ; terror_current_state.S1 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.461      ;
-; 2.250 ; bomb_current_state.S0   ; bomb_current_state.S0   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.471      ;
-; 2.280 ; bomb_current_state.S1   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.501      ;
-; 2.287 ; terror_current_state.S2 ; terror_current_state.S3 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.508      ;
-; 2.411 ; gun_current_state.S2    ; gun_current_state.S2    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.632      ;
-; 2.532 ; knife_current_state.S1  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.753      ;
-; 2.599 ; terror_current_state.S5 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.820      ;
-; 2.604 ; terror_current_state.S5 ; terror_current_state.S0 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.825      ;
-; 2.677 ; gun_current_state.S0    ; gun_current_state.S0    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.898      ;
-; 2.900 ; bomb_current_state.S2   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.121      ;
-; 3.019 ; gun_current_state.S0    ; gun_current_state.S1    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.240      ;
-; 3.063 ; gun_current_state.S2    ; gun_current_state.S0    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.284      ;
-; 3.064 ; gun_current_state.S2    ; gun_current_state.S1    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.285      ;
-; 3.071 ; bomb_current_state.S1   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.292      ;
-; 3.082 ; bomb_current_state.S1   ; bomb_current_state.S0   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.303      ;
-; 3.174 ; bomb_current_state.S3   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.395      ;
-; 3.189 ; bomb_current_state.S2   ; bomb_current_state.S0   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.410      ;
-; 3.208 ; terror_current_state.S1 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.429      ;
-; 3.224 ; terror_current_state.S3 ; terror_current_state.S4 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.445      ;
-; 3.306 ; terror_current_state.S4 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.527      ;
-; 3.332 ; gun_current_state.S1    ; gun_current_state.S1    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.553      ;
-; 3.361 ; bomb_current_state.S2   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.582      ;
-; 3.447 ; gun_current_state.S0    ; gun_current_state.S2    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.668      ;
-; 3.503 ; bomb_current_state.S1   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.724      ;
-; 3.510 ; bomb_current_state.S0   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.731      ;
-; 3.556 ; knife_current_state.S2  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.777      ;
-; 3.559 ; knife_current_state.S4  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.780      ;
-; 3.576 ; knife_current_state.S0  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.797      ;
-; 3.618 ; bomb_current_state.S2   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.839      ;
-; 3.635 ; gun_current_state.S1    ; gun_current_state.S2    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.856      ;
-; 3.657 ; bomb_current_state.S3   ; bomb_current_state.S0   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.878      ;
-; 3.681 ; bomb_current_state.S0   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.902      ;
-; 3.694 ; terror_current_state.S0 ; terror_current_state.S0 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.915      ;
-; 3.825 ; knife_current_state.S1  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.046      ;
-; 3.879 ; bomb_current_state.S3   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 4.100      ;
-; 3.942 ; bomb_current_state.S0   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 4.163      ;
-; 3.949 ; terror_current_state.S2 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.170      ;
-; 3.951 ; terror_current_state.S2 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.172      ;
-; 3.965 ; terror_current_state.S0 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.186      ;
-; 4.026 ; knife_current_state.S3  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.247      ;
-; 4.106 ; knife_current_state.S0  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.327      ;
-; 4.248 ; knife_current_state.S0  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.469      ;
-; 4.285 ; terror_current_state.S1 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.506      ;
-; 4.305 ; bomb_current_state.S3   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 4.526      ;
-; 4.366 ; knife_current_state.S4  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.587      ;
-; 4.370 ; terror_current_state.S4 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.591      ;
-; 4.371 ; knife_current_state.S3  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.592      ;
-; 4.373 ; terror_current_state.S4 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.594      ;
-; 4.404 ; knife_current_state.S2  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.625      ;
-; 4.427 ; terror_current_state.S3 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.648      ;
-; 4.429 ; terror_current_state.S3 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.650      ;
-; 4.430 ; terror_current_state.S3 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.651      ;
-; 4.528 ; terror_current_state.S5 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.749      ;
-; 4.531 ; terror_current_state.S5 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.752      ;
-; 4.824 ; knife_current_state.S2  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.045      ;
-; 4.843 ; knife_current_state.S2  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.064      ;
-; 4.947 ; knife_current_state.S0  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.168      ;
-; 5.059 ; knife_current_state.S4  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.280      ;
-; 5.065 ; knife_current_state.S4  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.286      ;
-; 5.075 ; knife_current_state.S3  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.296      ;
-; 5.081 ; knife_current_state.S3  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.302      ;
-; 5.211 ; terror_current_state.S0 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.432      ;
-; 5.212 ; terror_current_state.S0 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.433      ;
+; 1.711 ; terror_current_state.S2 ; terror_current_state.S3 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.932      ;
+; 1.935 ; terror_current_state.S5 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.156      ;
+; 2.129 ; knife_current_state.S1  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.350      ;
+; 2.152 ; bomb_current_state.S2   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.373      ;
+; 2.163 ; bomb_current_state.S1   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.384      ;
+; 2.178 ; terror_current_state.S2 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.399      ;
+; 2.239 ; terror_current_state.S1 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.460      ;
+; 2.259 ; gun_current_state.S0    ; gun_current_state.S0    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.480      ;
+; 2.261 ; gun_current_state.S1    ; gun_current_state.S1    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.482      ;
+; 2.265 ; knife_current_state.S3  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.486      ;
+; 2.272 ; bomb_current_state.S3   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.493      ;
+; 2.283 ; knife_current_state.S0  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.504      ;
+; 2.323 ; gun_current_state.S2    ; gun_current_state.S2    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.544      ;
+; 2.340 ; knife_current_state.S2  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.561      ;
+; 2.351 ; terror_current_state.S3 ; terror_current_state.S3 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.572      ;
+; 2.387 ; bomb_current_state.S0   ; bomb_current_state.S0   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.608      ;
+; 2.654 ; bomb_current_state.S1   ; bomb_current_state.S0   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.875      ;
+; 2.698 ; gun_current_state.S1    ; gun_current_state.S0    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.919      ;
+; 2.732 ; gun_current_state.S2    ; gun_current_state.S1    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.953      ;
+; 2.899 ; bomb_current_state.S1   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.120      ;
+; 2.905 ; bomb_current_state.S3   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.126      ;
+; 2.906 ; bomb_current_state.S2   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.127      ;
+; 2.997 ; bomb_current_state.S0   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.218      ;
+; 3.043 ; terror_current_state.S5 ; terror_current_state.S0 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.264      ;
+; 3.092 ; terror_current_state.S0 ; terror_current_state.S0 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.313      ;
+; 3.161 ; terror_current_state.S3 ; terror_current_state.S4 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.382      ;
+; 3.162 ; gun_current_state.S1    ; gun_current_state.S2    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.383      ;
+; 3.196 ; gun_current_state.S2    ; gun_current_state.S0    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.417      ;
+; 3.208 ; bomb_current_state.S2   ; bomb_current_state.S1   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.429      ;
+; 3.215 ; terror_current_state.S4 ; terror_current_state.S4 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.436      ;
+; 3.247 ; gun_current_state.S2    ; W~reg0                  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.468      ;
+; 3.281 ; knife_current_state.S0  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.502      ;
+; 3.282 ; gun_current_state.S0    ; gun_current_state.S1    ; clk          ; clk         ; 0.000        ; 0.000      ; 3.503      ;
+; 3.371 ; bomb_current_state.S3   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.592      ;
+; 3.389 ; knife_current_state.S4  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.610      ;
+; 3.455 ; bomb_current_state.S0   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.676      ;
+; 3.460 ; terror_current_state.S4 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.681      ;
+; 3.463 ; bomb_current_state.S0   ; bomb_current_state.S2   ; clk          ; clk         ; 0.000        ; 0.000      ; 3.684      ;
+; 3.489 ; knife_current_state.S1  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.710      ;
+; 3.625 ; terror_current_state.S3 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.846      ;
+; 3.709 ; terror_current_state.S1 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.930      ;
+; 3.727 ; knife_current_state.S2  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.948      ;
+; 3.730 ; terror_current_state.S2 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.951      ;
+; 3.737 ; terror_current_state.S2 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.958      ;
+; 3.842 ; knife_current_state.S3  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.063      ;
+; 3.877 ; terror_current_state.S5 ; W~reg0                  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.098      ;
+; 3.887 ; gun_current_state.S0    ; gun_current_state.S2    ; clk          ; clk         ; 0.000        ; 0.000      ; 4.108      ;
+; 3.921 ; bomb_current_state.S3   ; W~reg0                  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.142      ;
+; 3.938 ; terror_current_state.S0 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.159      ;
+; 3.967 ; bomb_current_state.S2   ; bomb_current_state.S0   ; clk          ; clk         ; 0.000        ; 0.000      ; 4.188      ;
+; 3.992 ; terror_current_state.S5 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.213      ;
+; 3.993 ; knife_current_state.S2  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.214      ;
+; 4.004 ; knife_current_state.S3  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.225      ;
+; 4.040 ; terror_current_state.S4 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.261      ;
+; 4.095 ; terror_current_state.S3 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.316      ;
+; 4.102 ; terror_current_state.S3 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.323      ;
+; 4.153 ; knife_current_state.S4  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.374      ;
+; 4.228 ; knife_current_state.S1  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.449      ;
+; 4.260 ; knife_current_state.S3  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.481      ;
+; 4.301 ; knife_current_state.S4  ; knife_current_state.S1  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.522      ;
+; 4.462 ; terror_current_state.S5 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.683      ;
+; 4.475 ; bomb_current_state.S1   ; bomb_current_state.S3   ; clk          ; clk         ; 0.000        ; 0.000      ; 4.696      ;
+; 4.493 ; knife_current_state.S0  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.714      ;
+; 4.497 ; knife_current_state.S2  ; knife_current_state.S0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.718      ;
+; 4.503 ; knife_current_state.S4  ; W~reg0                  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.724      ;
+; 4.510 ; terror_current_state.S4 ; terror_current_state.S1 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.731      ;
+; 4.537 ; terror_current_state.S0 ; terror_current_state.S2 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.758      ;
+; 4.614 ; knife_current_state.S0  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.835      ;
+; 4.675 ; knife_current_state.S3  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.896      ;
+; 4.727 ; knife_current_state.S4  ; knife_current_state.S3  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.948      ;
+; 4.900 ; knife_current_state.S0  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.121      ;
+; 4.924 ; knife_current_state.S2  ; knife_current_state.S4  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.145      ;
+; 5.014 ; terror_current_state.S0 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.235      ;
+; 5.124 ; terror_current_state.S1 ; terror_current_state.S5 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.345      ;
+; 5.134 ; knife_current_state.S4  ; knife_current_state.S2  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.355      ;
 +-------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -302,6 +306,8 @@ No paths to report.
 ; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                      ;
 +--------+--------------+----------------+------------------+-------+------------+-----------------------------+
 ; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; clk   ; Rise       ; clk                         ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; W~reg0                      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; W~reg0                      ;
 ; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; bomb_current_state.S0       ;
 ; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; bomb_current_state.S0       ;
 ; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; bomb_current_state.S1       ;
@@ -338,6 +344,8 @@ No paths to report.
 ; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; terror_current_state.S4     ;
 ; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; clk   ; Rise       ; terror_current_state.S5     ;
 ; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; clk   ; Rise       ; terror_current_state.S5     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; W~reg0|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; W~reg0|clk                  ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; bomb_current_state.S0|clk   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; bomb_current_state.S0|clk   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; bomb_current_state.S1|clk   ;
@@ -384,12 +392,12 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; X0        ; clk        ; 9.758 ; 9.758 ; Rise       ; clk             ;
-; X1        ; clk        ; 8.632 ; 8.632 ; Rise       ; clk             ;
-; X2        ; clk        ; 8.128 ; 8.128 ; Rise       ; clk             ;
-; X3        ; clk        ; 9.331 ; 9.331 ; Rise       ; clk             ;
-; X4        ; clk        ; 9.478 ; 9.478 ; Rise       ; clk             ;
-; reset     ; clk        ; 6.167 ; 6.167 ; Rise       ; clk             ;
+; X0        ; clk        ; 7.705 ; 7.705 ; Rise       ; clk             ;
+; X1        ; clk        ; 6.562 ; 6.562 ; Rise       ; clk             ;
+; X2        ; clk        ; 6.969 ; 6.969 ; Rise       ; clk             ;
+; X3        ; clk        ; 7.671 ; 7.671 ; Rise       ; clk             ;
+; X4        ; clk        ; 7.351 ; 7.351 ; Rise       ; clk             ;
+; reset     ; clk        ; 5.524 ; 5.524 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -398,57 +406,31 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; X0        ; clk        ; -2.078 ; -2.078 ; Rise       ; clk             ;
-; X1        ; clk        ; -2.817 ; -2.817 ; Rise       ; clk             ;
-; X2        ; clk        ; -2.435 ; -2.435 ; Rise       ; clk             ;
-; X3        ; clk        ; -2.731 ; -2.731 ; Rise       ; clk             ;
-; X4        ; clk        ; -3.102 ; -3.102 ; Rise       ; clk             ;
-; reset     ; clk        ; -1.455 ; -1.455 ; Rise       ; clk             ;
+; X0        ; clk        ; -1.844 ; -1.844 ; Rise       ; clk             ;
+; X1        ; clk        ; -1.670 ; -1.670 ; Rise       ; clk             ;
+; X2        ; clk        ; -1.944 ; -1.944 ; Rise       ; clk             ;
+; X3        ; clk        ; -1.778 ; -1.778 ; Rise       ; clk             ;
+; X4        ; clk        ; -1.740 ; -1.740 ; Rise       ; clk             ;
+; reset     ; clk        ; -1.351 ; -1.351 ; Rise       ; clk             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; W         ; clk        ; 13.793 ; 13.793 ; Rise       ; clk             ;
-+-----------+------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; W         ; clk        ; 7.917 ; 7.917 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; W         ; clk        ; 10.293 ; 10.293 ; Rise       ; clk             ;
-+-----------+------------+--------+--------+------------+-----------------+
-
-
-+------------------------------------------------------+
-; Propagation Delay                                    ;
-+------------+-------------+--------+----+----+--------+
-; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
-+------------+-------------+--------+----+----+--------+
-; X0         ; W           ; 17.312 ;    ;    ; 17.312 ;
-; X1         ; W           ; 16.792 ;    ;    ; 16.792 ;
-; X2         ; W           ; 16.025 ;    ;    ; 16.025 ;
-; X3         ; W           ; 16.885 ;    ;    ; 16.885 ;
-; X4         ; W           ; 16.352 ;    ;    ; 16.352 ;
-+------------+-------------+--------+----+----+--------+
-
-
-+------------------------------------------------------+
-; Minimum Propagation Delay                            ;
-+------------+-------------+--------+----+----+--------+
-; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
-+------------+-------------+--------+----+----+--------+
-; X0         ; W           ; 11.476 ;    ;    ; 11.476 ;
-; X1         ; W           ; 12.364 ;    ;    ; 12.364 ;
-; X2         ; W           ; 12.202 ;    ;    ; 12.202 ;
-; X3         ; W           ; 12.278 ;    ;    ; 12.278 ;
-; X4         ; W           ; 12.129 ;    ;    ; 12.129 ;
-+------------+-------------+--------+----+----+--------+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; W         ; clk        ; 7.917 ; 7.917 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
 
 
 +-------------------------------------------------------------------+
@@ -456,7 +438,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 118      ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 112      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -466,7 +448,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 118      ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 112      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -491,9 +473,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 113   ; 113  ;
+; Unconstrained Input Port Paths  ; 114   ; 114  ;
 ; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
 +---------------------------------+-------+------+
 
 
@@ -503,7 +485,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu Mar  3 00:32:03 2016
+    Info: Processing started: Fri Mar 11 00:03:57 2016
 Info: Command: quartus_sta StringRecognizer -c StringRecognizer
 Info: qsta_default_script.tcl version: #3
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -518,14 +500,14 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.766
+Info (332146): Worst-case setup slack is -4.931
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.766             -67.813 clk 
-Info (332146): Worst-case hold slack is 1.950
+    Info (332119):    -4.931             -71.634 clk 
+Info (332146): Worst-case hold slack is 1.711
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.950               0.000 clk 
+    Info (332119):     1.711               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
@@ -536,8 +518,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 697 megabytes
-    Info: Processing ended: Thu Mar  3 00:32:04 2016
+    Info: Peak virtual memory: 698 megabytes
+    Info: Processing ended: Fri Mar 11 00:03:58 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

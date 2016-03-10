@@ -167,23 +167,23 @@ GNDIO                        : 99        : gnd    :                   :         
 VCCIO3                       : 100       : power  :                   : 3.3V    : 3         :                
 GND*                         : 101       :        :                   :         : 3         :                
 GND*                         : 102       :        :                   :         : 3         :                
-GND*                         : 103       :        :                   :         : 3         :                
-GND*                         : 104       :        :                   :         : 3         :                
-X4                           : 105       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : 106       :        :                   :         : 3         :                
-X3                           : 107       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : 108       :        :                   :         : 3         :                
+reset                        : 103       : input  : 3.3-V LVTTL       :         : 3         : N              
+X3                           : 104       : input  : 3.3-V LVTTL       :         : 3         : N              
+X2                           : 105       : input  : 3.3-V LVTTL       :         : 3         : N              
+W                            : 106       : output : 3.3-V LVTTL       :         : 3         : N              
+X0                           : 107       : input  : 3.3-V LVTTL       :         : 3         : N              
+X1                           : 108       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : 109       :        :                   :         : 2         :                
-GND*                         : 110       :        :                   :         : 2         :                
+X4                           : 110       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 111       :        :                   :         : 2         :                
-reset                        : 112       : input  : 3.3-V LVTTL       :         : 2         : N              
-X1                           : 113       : input  : 3.3-V LVTTL       :         : 2         : N              
-W                            : 114       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 112       :        :                   :         : 2         :                
+GND*                         : 113       :        :                   :         : 2         :                
+GND*                         : 114       :        :                   :         : 2         :                
 GNDIO                        : 115       : gnd    :                   :         :           :                
 VCCIO2                       : 116       : power  :                   : 3.3V    : 2         :                
 GND*                         : 117       :        :                   :         : 2         :                
-X0                           : 118       : input  : 3.3-V LVTTL       :         : 2         : N              
-X2                           : 119       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 118       :        :                   :         : 2         :                
+GND*                         : 119       :        :                   :         : 2         :                
 GND*                         : 120       :        :                   :         : 2         :                
 GND*                         : 121       :        :                   :         : 2         :                
 GND*                         : 122       :        :                   :         : 2         :                

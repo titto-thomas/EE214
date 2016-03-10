@@ -13,7 +13,7 @@
 # 
 # vcom -93 -work work {StringRecognizer.vho}
 # Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 00:42:42 on Mar 03,2016
+# Start time: 00:05:48 on Mar 11,2016
 # vcom -reportprogress 300 -93 -work work StringRecognizer.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -24,12 +24,12 @@
 # -- Loading package maxv_components
 # -- Compiling entity StringRecognizer
 # -- Compiling architecture structure of StringRecognizer
-# End time: 00:42:42 on Mar 03,2016, Elapsed time: 0:00:00
+# End time: 00:05:48 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {/home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd}
 # Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 00:42:42 on Mar 03,2016
+# Start time: 00:05:48 on Mar 11,2016
 # vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -38,12 +38,12 @@
 # -- Compiling entity test_StringRecognizer
 # -- Compiling architecture test_hw of test_StringRecognizer
 # ** Warning: /home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd(67): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# End time: 00:42:42 on Mar 03,2016, Elapsed time: 0:00:00
+# End time: 00:05:48 on Mar 11,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
-# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=StringRecognizer_vhd.sdo -L maxv -L gate_work -L work -voptargs="+acc"  test_StringRecognizer
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /DUT=StringRecognizer_vhd.sdo -L maxv -L gate_work -L work -voptargs="+acc"  test_StringRecognizer
 # vsim -i -l msim_transcript -do "StringRecognizer_run_msim_gate_vhdl.do" 
-# Start time: 00:42:42 on Mar 03,2016
+# Start time: 00:05:48 on Mar 11,2016
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -61,15 +61,17 @@
 # Loading maxv.maxv_asynch_lcell(vital_le)
 # Loading maxv.maxv_lcell_register(vital_le_reg)
 # Loading instances from StringRecognizer_vhd.sdo
-# ** Error: (vsim-SDF-3250) StringRecognizer_vhd.sdo(0): Failed to find INSTANCE '/NA'.
-# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
-# ** Error: (vsim-SDF-3250) StringRecognizer_vhd.sdo(0): Failed to find INSTANCE '/NA'.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./StringRecognizer_run_msim_gate_vhdl.do PAUSED at line 12
-# Error opening /home/titto/Desktop/EE214/StringRecognizer/Quartus/simulation/modelsim/(vsim-SDF-3250) StringRecognizer_vhd.sdo
-# Path name '/home/titto/Desktop/EE214/StringRecognizer/Quartus/simulation/modelsim/(vsim-SDF-3250) StringRecognizer_vhd.sdo' doesn't exist.
-# A time value could not be extracted from the current line
-# End time: 00:43:23 on Mar 03,2016, Elapsed time: 0:00:41
-# Errors: 3, Warnings: 0
+# Loading timing data from StringRecognizer_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /test_stringrecognizer File: /home/titto/Desktop/EE214/StringRecognizer/Quartus/../test_StringRecognizer.vhd
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# stdin: <EOF>
+# End time: 00:06:26 on Mar 11,2016, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 0
