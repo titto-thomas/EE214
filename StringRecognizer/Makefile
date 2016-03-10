@@ -15,4 +15,4 @@ wave: plot.ghw
 .PHONY: clean
 
 clean:
-	rm -f *.o *.ghw *.cf test_stringrecognizer ./C/encoding
+	rm -f *.o *.ghw *.cf output.txt scan.txt test_stringrecognizer ./C/encoding *.*~

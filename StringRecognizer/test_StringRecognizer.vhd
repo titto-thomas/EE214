@@ -45,6 +45,48 @@ begin
    return sl;
 end to_std_logic_vector;
 
+function to_hstring (value : std_logic_vector) return string is
+constant ne     : integer := (value'length+3)/4;
+variable pad    : std_logic_vector(0 to (ne*4 - value'length) - 1);
+variable ivalue : std_logic_vector(0 to ne*4 - 1);
+variable result : string(1 to ne);
+variable quad   : std_logic_vector(0 to 3);
+begin
+if value (value'left) = 'Z' then
+	pad := (others => 'Z');
+else
+	pad := (others => '0');
+end if;
+
+ivalue := pad & value;
+
+for i in 0 to ne-1 loop
+	quad := ivalue(4*i to 4*i+3);
+	case quad is
+		  when x"0"   => result(i+1) := '0';
+		  when x"1"   => result(i+1) := '1';
+		  when x"2"   => result(i+1) := '2';
+		  when x"3"   => result(i+1) := '3';
+		  when x"4"   => result(i+1) := '4';
+		  when x"5"   => result(i+1) := '5';
+		  when x"6"   => result(i+1) := '6';
+		  when x"7"   => result(i+1) := '7';
+		  when x"8"   => result(i+1) := '8';
+		  when x"9"   => result(i+1) := '9';
+		  when x"A"   => result(i+1) := 'A';
+		  when x"B"   => result(i+1) := 'B';
+		  when x"C"   => result(i+1) := 'C';
+		  when x"D"   => result(i+1) := 'D';
+		  when x"E"   => result(i+1) := 'E';
+		  when x"F"   => result(i+1) := 'F';
+		  when "ZZZZ" => result(i+1) := 'Z';
+		  when others => result(i+1) := 'X';
+	end case;
+end loop;
+
+return result;
+end function to_hstring;
+
 component StringRecognizer is
     port (
 	X4,X3,X2,X1,X0: in std_logic; 
@@ -66,6 +108,7 @@ clk <= not clk after 50 ns;
 checking : process
     file   infile    : text is in  "input.txt";   --declare input file
     file   outfile    : text open write_mode is  "output.txt";   --declare output file
+    file OUT_FILE   : text open write_mode is  "scan.txt";   --declare output file
     variable  inline    : line; --line number declaration
     variable  inline_dummy   : line; --line number declaration
     variable  outline    : line; --line number declaration
@@ -74,10 +117,27 @@ checking : process
     variable string_read_success : boolean;
     variable string_write_success : boolean;
     variable string_out : string (1 to string_max_size+1) := (others => ' ');
+    variable LINE_NUM : line;
+    variable LINE_STRING1 : string (1 to 30);
+    constant LINE_STRING2 : string (1 to 14) := "RUNTEST 1 MSEC";
+    variable dumX1 : std_logic_vector(7 downto 0);
+    variable dumX2 : std_logic_vector(7 downto 0);
+    variable dumW : std_logic_vector(3 downto 0);
 begin
 
 reset <= '1';
 
+LINE_STRING1 := ("SDR 7 TDI(20) 1 TDO(0) MASK(F)"); 
+WRITE(LINE_NUM, LINE_STRING1);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+WRITE(LINE_NUM, LINE_STRING2);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+LINE_STRING1 := ("SDR 7 TDI(60) 1 TDO(0) MASK(F)"); 
+WRITE(LINE_NUM, LINE_STRING1);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+WRITE(LINE_NUM, LINE_STRING2);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+      		
 wait for 220 ns;
 
 reset <= '0';
@@ -93,7 +153,11 @@ while not endfile(infile) loop
 		if not string_read_success then -- found end of line 
 		exit;
 		end if;
+		
 		X <= to_std_logic_vector(string_char);
+		dumX1 := "000" & to_std_logic_vector(string_char);
+		dumX2 := "001" & to_std_logic_vector(string_char);
+		
 		wait until clk'event and clk = '0';
 		if (W = '1') then
 			string_out_char := 'y';
@@ -101,6 +165,19 @@ while not endfile(infile) loop
 			string_out_char := 'n';
 		end if;
 		string_out(i+1) := string_out_char;
+		
+		dumW := "000" & W;
+		LINE_STRING1 := ("SDR 7 TDI(" & to_hstring(dumX1) & ") 1 TDO(0) MASK(0)"); 
+		WRITE(LINE_NUM, LINE_STRING1);	--save results to line
+      		WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+		WRITE(LINE_NUM, LINE_STRING2);	--save results to line
+      		WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+      		LINE_STRING1 := ("SDR 7 TDI(" & to_hstring(dumX2) & ") 1 TDO(" & to_hstring(dumW) & ") MASK(F)"); 
+		WRITE(LINE_NUM, LINE_STRING1);	--save results to line
+      		WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+		WRITE(LINE_NUM, LINE_STRING2);	--save results to line
+      		WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+      		
 	end loop;
 	write(outline, string_out);
 	writeline(outfile, outline);
