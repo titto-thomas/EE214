@@ -1,90 +1,137 @@
-# do ALU_run_msim_gate_vhdl.do 
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do ALU_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
-# Copying /home/titto/Quartus/modelsim_ase/linux/../modelsim.ini to modelsim.ini
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim LE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying /home/titto/Altera/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied /home/titto/Quartus/modelsim_ase/linux/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied /home/titto/Altera/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {ALU.vho}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# vcom -93 -work work {/home/titto/Desktop/EE214/ALU/rShift/mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/rShift/mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package maxv_atom_pack
-# -- Loading package maxv_components
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux
+# -- Compiling architecture mux_hw of mux
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/titto/Desktop/EE214/ALU/rShift/rshift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/rShift/rshift.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rshift
+# -- Compiling architecture rshift_hw of rshift
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/titto/Desktop/EE214/ALU/lShift/lshift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/lShift/lshift.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lshift
+# -- Compiling architecture lshift_hw of lshift
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/titto/Desktop/EE214/ALU/Sub/sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/Sub/sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sub
+# -- Compiling architecture sub_hw of sub
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/titto/Desktop/EE214/ALU/Adder/adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/Adder/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder
+# -- Compiling architecture adder_hw of adder
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/titto/Desktop/EE214/ALU/Adder/FA.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/Adder/FA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FA
+# -- Compiling architecture fa_hw of FA
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/titto/Desktop/EE214/ALU/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
 # -- Compiling entity alu
-# -- Compiling architecture structure of alu
+# -- Compiling architecture alu_hw of alu
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {/home/titto/Desktop/EE214/ALU/Quartus/../test_alu.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 14:50:23 on Mar 02,2016
+# vcom -reportprogress 300 -93 -work work /home/titto/Desktop/EE214/ALU/Quartus/../test_alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity test_alu
 # -- Compiling architecture test_hw of test_alu
+# End time: 14:50:23 on Mar 02,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=ALU_vhd.sdo -L maxv -L gate_work -L work -voptargs="+acc"  test_alu
-# vsim +transport_int_delays +transport_path_delays -L maxv -L gate_work -L work -voptargs=\"+acc\" -sdftyp /NA=ALU_vhd.sdo -t 1ps test_alu 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  test_alu
+# vsim -i -l msim_transcript -do "ALU_run_msim_rtl_vhdl.do" 
+# Start time: 14:50:23 on Mar 02,2016
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.test_alu(test_hw)
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading maxv.maxv_atom_pack(body)
-# Loading maxv.maxv_components
-# Loading work.alu(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading maxv.maxv_io(behave)
-# Loading maxv.maxv_lcell(vital_le_atom)
-# Loading maxv.maxv_asynch_lcell(vital_le)
-# Loading maxv.maxv_lcell_register(vital_le_reg)
-# Loading instances from ALU_vhd.sdo
-# ** Error: (vsim-SDF-3250) ALU_vhd.sdo(0): Failed to find INSTANCE '/NA'.
-# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
-# ** Error: (vsim-SDF-3250) ALU_vhd.sdo(0): Failed to find INSTANCE '/NA'.
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./ALU_run_msim_gate_vhdl.do PAUSED at line 12
-vsim work.test_alu(test_hw)
-# vsim work.test_alu(test_hw) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.test_alu(test_hw)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading maxv.maxv_atom_pack(body)
-# Loading maxv.maxv_components
-# Loading work.alu(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading maxv.maxv_io(behave)
-# Loading maxv.maxv_lcell(vital_le_atom)
-# Loading maxv.maxv_asynch_lcell(vital_le)
-# Loading maxv.maxv_lcell_register(vital_le_reg)
-# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim Altera version. Expect performance to be adversely affected.
-add wave -position insertpoint  \
-sim:/test_alu/InData1 \
-sim:/test_alu/InData2 \
-sim:/test_alu/OutData \
-sim:/test_alu/ALUop
-run
-run
-run
-run
-quit
-# Break key hit 
-# Simulation stop requested.
+# Loading work.alu(alu_hw)
+# Loading work.adder(adder_hw)
+# Loading work.fa(fa_hw)
+# Loading work.sub(sub_hw)
+# Loading work.rshift(rshift_hw)
+# Loading work.mux(mux_hw)
+# Loading work.lshift(lshift_hw)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Process Main at /home/titto/Desktop/EE214/ALU/Quartus/../test_alu.vhd line 99
+# End time: 14:50:36 on Mar 02,2016, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0

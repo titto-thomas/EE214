@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for ALU
-Wed Feb 17 18:48:25 2016
-Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Web Edition
+Wed Mar  2 14:50:03 2016
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
 ---------------------
@@ -29,33 +29,34 @@ Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2012 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
-+-----------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                     ;
-+--------------------+--------------------------------------------------+
-; Quartus II Version ; Version 12.0 Build 178 05/31/2012 SJ Web Edition ;
-; Revision Name      ; ALU                                              ;
-; Device Family      ; MAX V                                            ;
-; Device Name        ; 5M1270ZT144C5                                    ;
-; Timing Models      ; Final                                            ;
-; Delay Model        ; Slow Model                                       ;
-; Rise/Fall Delays   ; Unavailable                                      ;
-+--------------------+--------------------------------------------------+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
+; Revision Name      ; ALU                                                ;
+; Device Family      ; MAX V                                              ;
+; Device Name        ; 5M1270ZT144C5                                      ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Slow Model                                         ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -116,125 +117,125 @@ No paths to report.
 +------------+-------------+--------+----+----+--------+
 ; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
 +------------+-------------+--------+----+----+--------+
-; ALUop[0]   ; OutData[0]  ; 15.093 ;    ;    ; 15.093 ;
-; ALUop[0]   ; OutData[1]  ; 18.750 ;    ;    ; 18.750 ;
-; ALUop[0]   ; OutData[2]  ; 21.235 ;    ;    ; 21.235 ;
-; ALUop[0]   ; OutData[3]  ; 19.547 ;    ;    ; 19.547 ;
-; ALUop[0]   ; OutData[4]  ; 19.311 ;    ;    ; 19.311 ;
-; ALUop[0]   ; OutData[5]  ; 21.562 ;    ;    ; 21.562 ;
-; ALUop[0]   ; OutData[6]  ; 18.759 ;    ;    ; 18.759 ;
-; ALUop[0]   ; OutData[7]  ; 17.903 ;    ;    ; 17.903 ;
-; ALUop[1]   ; OutData[0]  ; 11.994 ;    ;    ; 11.994 ;
-; ALUop[1]   ; OutData[1]  ; 18.221 ;    ;    ; 18.221 ;
-; ALUop[1]   ; OutData[2]  ; 20.507 ;    ;    ; 20.507 ;
-; ALUop[1]   ; OutData[3]  ; 19.018 ;    ;    ; 19.018 ;
-; ALUop[1]   ; OutData[4]  ; 18.347 ;    ;    ; 18.347 ;
-; ALUop[1]   ; OutData[5]  ; 20.253 ;    ;    ; 20.253 ;
-; ALUop[1]   ; OutData[6]  ; 17.809 ;    ;    ; 17.809 ;
-; ALUop[1]   ; OutData[7]  ; 14.085 ;    ;    ; 14.085 ;
-; InData1[0] ; OutData[0]  ; 17.011 ;    ;    ; 17.011 ;
-; InData1[0] ; OutData[1]  ; 19.657 ;    ;    ; 19.657 ;
-; InData1[0] ; OutData[2]  ; 21.279 ;    ;    ; 21.279 ;
-; InData1[0] ; OutData[3]  ; 21.605 ;    ;    ; 21.605 ;
-; InData1[0] ; OutData[4]  ; 23.745 ;    ;    ; 23.745 ;
-; InData1[0] ; OutData[5]  ; 27.762 ;    ;    ; 27.762 ;
-; InData1[0] ; OutData[6]  ; 28.164 ;    ;    ; 28.164 ;
-; InData1[0] ; OutData[7]  ; 25.217 ;    ;    ; 25.217 ;
-; InData1[1] ; OutData[0]  ; 16.997 ;    ;    ; 16.997 ;
-; InData1[1] ; OutData[1]  ; 19.276 ;    ;    ; 19.276 ;
-; InData1[1] ; OutData[2]  ; 20.199 ;    ;    ; 20.199 ;
-; InData1[1] ; OutData[3]  ; 20.525 ;    ;    ; 20.525 ;
-; InData1[1] ; OutData[4]  ; 22.665 ;    ;    ; 22.665 ;
-; InData1[1] ; OutData[5]  ; 26.682 ;    ;    ; 26.682 ;
-; InData1[1] ; OutData[6]  ; 27.084 ;    ;    ; 27.084 ;
-; InData1[1] ; OutData[7]  ; 24.137 ;    ;    ; 24.137 ;
-; InData1[2] ; OutData[0]  ; 16.577 ;    ;    ; 16.577 ;
-; InData1[2] ; OutData[1]  ; 16.853 ;    ;    ; 16.853 ;
-; InData1[2] ; OutData[2]  ; 19.442 ;    ;    ; 19.442 ;
-; InData1[2] ; OutData[3]  ; 20.467 ;    ;    ; 20.467 ;
-; InData1[2] ; OutData[4]  ; 22.607 ;    ;    ; 22.607 ;
-; InData1[2] ; OutData[5]  ; 26.624 ;    ;    ; 26.624 ;
-; InData1[2] ; OutData[6]  ; 27.026 ;    ;    ; 27.026 ;
-; InData1[2] ; OutData[7]  ; 24.079 ;    ;    ; 24.079 ;
-; InData1[3] ; OutData[0]  ; 20.776 ;    ;    ; 20.776 ;
-; InData1[3] ; OutData[1]  ; 22.484 ;    ;    ; 22.484 ;
-; InData1[3] ; OutData[2]  ; 16.824 ;    ;    ; 16.824 ;
-; InData1[3] ; OutData[3]  ; 22.063 ;    ;    ; 22.063 ;
-; InData1[3] ; OutData[4]  ; 23.395 ;    ;    ; 23.395 ;
-; InData1[3] ; OutData[5]  ; 27.412 ;    ;    ; 27.412 ;
-; InData1[3] ; OutData[6]  ; 27.814 ;    ;    ; 27.814 ;
-; InData1[3] ; OutData[7]  ; 24.867 ;    ;    ; 24.867 ;
-; InData1[4] ; OutData[0]  ; 15.716 ;    ;    ; 15.716 ;
-; InData1[4] ; OutData[1]  ; 14.867 ;    ;    ; 14.867 ;
-; InData1[4] ; OutData[2]  ; 16.169 ;    ;    ; 16.169 ;
-; InData1[4] ; OutData[3]  ; 15.925 ;    ;    ; 15.925 ;
-; InData1[4] ; OutData[4]  ; 20.560 ;    ;    ; 20.560 ;
-; InData1[4] ; OutData[5]  ; 22.573 ;    ;    ; 22.573 ;
-; InData1[4] ; OutData[6]  ; 22.975 ;    ;    ; 22.975 ;
-; InData1[4] ; OutData[7]  ; 20.028 ;    ;    ; 20.028 ;
-; InData1[5] ; OutData[0]  ; 16.296 ;    ;    ; 16.296 ;
-; InData1[5] ; OutData[1]  ; 18.004 ;    ;    ; 18.004 ;
-; InData1[5] ; OutData[2]  ; 15.082 ;    ;    ; 15.082 ;
-; InData1[5] ; OutData[3]  ; 20.321 ;    ;    ; 20.321 ;
-; InData1[5] ; OutData[4]  ; 20.378 ;    ;    ; 20.378 ;
-; InData1[5] ; OutData[5]  ; 19.371 ;    ;    ; 19.371 ;
-; InData1[5] ; OutData[6]  ; 19.267 ;    ;    ; 19.267 ;
-; InData1[5] ; OutData[7]  ; 22.749 ;    ;    ; 22.749 ;
-; InData1[6] ; OutData[0]  ; 14.990 ;    ;    ; 14.990 ;
-; InData1[6] ; OutData[1]  ; 18.791 ;    ;    ; 18.791 ;
-; InData1[6] ; OutData[2]  ; 20.093 ;    ;    ; 20.093 ;
-; InData1[6] ; OutData[3]  ; 17.635 ;    ;    ; 17.635 ;
-; InData1[6] ; OutData[4]  ; 19.834 ;    ;    ; 19.834 ;
-; InData1[6] ; OutData[5]  ; 12.677 ;    ;    ; 12.677 ;
-; InData1[6] ; OutData[6]  ; 19.447 ;    ;    ; 19.447 ;
-; InData1[6] ; OutData[7]  ; 20.498 ;    ;    ; 20.498 ;
-; InData1[7] ; OutData[0]  ; 19.097 ;    ;    ; 19.097 ;
-; InData1[7] ; OutData[1]  ; 20.805 ;    ;    ; 20.805 ;
-; InData1[7] ; OutData[2]  ; 15.145 ;    ;    ; 15.145 ;
-; InData1[7] ; OutData[3]  ; 20.384 ;    ;    ; 20.384 ;
-; InData1[7] ; OutData[4]  ; 19.926 ;    ;    ; 19.926 ;
-; InData1[7] ; OutData[5]  ; 21.388 ;    ;    ; 21.388 ;
-; InData1[7] ; OutData[6]  ; 17.752 ;    ;    ; 17.752 ;
-; InData1[7] ; OutData[7]  ; 17.352 ;    ;    ; 17.352 ;
-; InData2[0] ; OutData[0]  ; 12.331 ;    ;    ; 12.331 ;
-; InData2[0] ; OutData[1]  ; 20.466 ;    ;    ; 20.466 ;
-; InData2[0] ; OutData[2]  ; 22.145 ;    ;    ; 22.145 ;
-; InData2[0] ; OutData[3]  ; 22.629 ;    ;    ; 22.629 ;
-; InData2[0] ; OutData[4]  ; 25.468 ;    ;    ; 25.468 ;
-; InData2[0] ; OutData[5]  ; 29.485 ;    ;    ; 29.485 ;
-; InData2[0] ; OutData[6]  ; 29.887 ;    ;    ; 29.887 ;
-; InData2[0] ; OutData[7]  ; 26.940 ;    ;    ; 26.940 ;
-; InData2[1] ; OutData[0]  ; 18.043 ;    ;    ; 18.043 ;
-; InData2[1] ; OutData[1]  ; 20.308 ;    ;    ; 20.308 ;
-; InData2[1] ; OutData[2]  ; 21.987 ;    ;    ; 21.987 ;
-; InData2[1] ; OutData[3]  ; 24.522 ;    ;    ; 24.522 ;
-; InData2[1] ; OutData[4]  ; 27.361 ;    ;    ; 27.361 ;
-; InData2[1] ; OutData[5]  ; 31.378 ;    ;    ; 31.378 ;
-; InData2[1] ; OutData[6]  ; 31.780 ;    ;    ; 31.780 ;
-; InData2[1] ; OutData[7]  ; 28.833 ;    ;    ; 28.833 ;
-; InData2[2] ; OutData[0]  ; 20.368 ;    ;    ; 20.368 ;
-; InData2[2] ; OutData[1]  ; 22.076 ;    ;    ; 22.076 ;
-; InData2[2] ; OutData[2]  ; 21.727 ;    ;    ; 21.727 ;
-; InData2[2] ; OutData[3]  ; 23.249 ;    ;    ; 23.249 ;
-; InData2[2] ; OutData[4]  ; 26.088 ;    ;    ; 26.088 ;
-; InData2[2] ; OutData[5]  ; 30.105 ;    ;    ; 30.105 ;
-; InData2[2] ; OutData[6]  ; 30.507 ;    ;    ; 30.507 ;
-; InData2[2] ; OutData[7]  ; 27.560 ;    ;    ; 27.560 ;
-; InData2[3] ; OutData[3]  ; 23.352 ;    ;    ; 23.352 ;
-; InData2[3] ; OutData[4]  ; 26.191 ;    ;    ; 26.191 ;
-; InData2[3] ; OutData[5]  ; 30.208 ;    ;    ; 30.208 ;
-; InData2[3] ; OutData[6]  ; 30.610 ;    ;    ; 30.610 ;
-; InData2[3] ; OutData[7]  ; 27.663 ;    ;    ; 27.663 ;
-; InData2[4] ; OutData[4]  ; 19.250 ;    ;    ; 19.250 ;
-; InData2[4] ; OutData[5]  ; 23.289 ;    ;    ; 23.289 ;
-; InData2[4] ; OutData[6]  ; 23.691 ;    ;    ; 23.691 ;
-; InData2[4] ; OutData[7]  ; 20.744 ;    ;    ; 20.744 ;
-; InData2[5] ; OutData[5]  ; 20.145 ;    ;    ; 20.145 ;
-; InData2[5] ; OutData[6]  ; 20.552 ;    ;    ; 20.552 ;
-; InData2[5] ; OutData[7]  ; 17.928 ;    ;    ; 17.928 ;
-; InData2[6] ; OutData[6]  ; 18.334 ;    ;    ; 18.334 ;
-; InData2[6] ; OutData[7]  ; 17.371 ;    ;    ; 17.371 ;
-; InData2[7] ; OutData[7]  ; 16.606 ;    ;    ; 16.606 ;
+; ALUop[0]   ; OutData[0]  ; 15.861 ;    ;    ; 15.861 ;
+; ALUop[0]   ; OutData[1]  ; 16.745 ;    ;    ; 16.745 ;
+; ALUop[0]   ; OutData[2]  ; 25.121 ;    ;    ; 25.121 ;
+; ALUop[0]   ; OutData[3]  ; 14.191 ;    ;    ; 14.191 ;
+; ALUop[0]   ; OutData[4]  ; 17.006 ;    ;    ; 17.006 ;
+; ALUop[0]   ; OutData[5]  ; 20.368 ;    ;    ; 20.368 ;
+; ALUop[0]   ; OutData[6]  ; 17.562 ;    ;    ; 17.562 ;
+; ALUop[0]   ; OutData[7]  ; 13.574 ;    ;    ; 13.574 ;
+; ALUop[1]   ; OutData[0]  ; 9.542  ;    ;    ; 9.542  ;
+; ALUop[1]   ; OutData[1]  ; 14.906 ;    ;    ; 14.906 ;
+; ALUop[1]   ; OutData[2]  ; 22.379 ;    ;    ; 22.379 ;
+; ALUop[1]   ; OutData[3]  ; 12.352 ;    ;    ; 12.352 ;
+; ALUop[1]   ; OutData[4]  ; 14.264 ;    ;    ; 14.264 ;
+; ALUop[1]   ; OutData[5]  ; 17.926 ;    ;    ; 17.926 ;
+; ALUop[1]   ; OutData[6]  ; 15.528 ;    ;    ; 15.528 ;
+; ALUop[1]   ; OutData[7]  ; 8.858  ;    ;    ; 8.858  ;
+; InData1[0] ; OutData[0]  ; 15.375 ;    ;    ; 15.375 ;
+; InData1[0] ; OutData[1]  ; 16.961 ;    ;    ; 16.961 ;
+; InData1[0] ; OutData[2]  ; 25.223 ;    ;    ; 25.223 ;
+; InData1[0] ; OutData[3]  ; 17.533 ;    ;    ; 17.533 ;
+; InData1[0] ; OutData[4]  ; 19.113 ;    ;    ; 19.113 ;
+; InData1[0] ; OutData[5]  ; 24.230 ;    ;    ; 24.230 ;
+; InData1[0] ; OutData[6]  ; 22.593 ;    ;    ; 22.593 ;
+; InData1[0] ; OutData[7]  ; 18.665 ;    ;    ; 18.665 ;
+; InData1[1] ; OutData[0]  ; 16.353 ;    ;    ; 16.353 ;
+; InData1[1] ; OutData[1]  ; 18.762 ;    ;    ; 18.762 ;
+; InData1[1] ; OutData[2]  ; 25.008 ;    ;    ; 25.008 ;
+; InData1[1] ; OutData[3]  ; 17.318 ;    ;    ; 17.318 ;
+; InData1[1] ; OutData[4]  ; 18.898 ;    ;    ; 18.898 ;
+; InData1[1] ; OutData[5]  ; 24.015 ;    ;    ; 24.015 ;
+; InData1[1] ; OutData[6]  ; 22.378 ;    ;    ; 22.378 ;
+; InData1[1] ; OutData[7]  ; 18.450 ;    ;    ; 18.450 ;
+; InData1[2] ; OutData[0]  ; 15.333 ;    ;    ; 15.333 ;
+; InData1[2] ; OutData[1]  ; 19.151 ;    ;    ; 19.151 ;
+; InData1[2] ; OutData[2]  ; 26.549 ;    ;    ; 26.549 ;
+; InData1[2] ; OutData[3]  ; 16.983 ;    ;    ; 16.983 ;
+; InData1[2] ; OutData[4]  ; 17.705 ;    ;    ; 17.705 ;
+; InData1[2] ; OutData[5]  ; 22.822 ;    ;    ; 22.822 ;
+; InData1[2] ; OutData[6]  ; 21.185 ;    ;    ; 21.185 ;
+; InData1[2] ; OutData[7]  ; 17.257 ;    ;    ; 17.257 ;
+; InData1[3] ; OutData[0]  ; 16.465 ;    ;    ; 16.465 ;
+; InData1[3] ; OutData[1]  ; 18.874 ;    ;    ; 18.874 ;
+; InData1[3] ; OutData[2]  ; 17.245 ;    ;    ; 17.245 ;
+; InData1[3] ; OutData[3]  ; 16.703 ;    ;    ; 16.703 ;
+; InData1[3] ; OutData[4]  ; 19.039 ;    ;    ; 19.039 ;
+; InData1[3] ; OutData[5]  ; 24.156 ;    ;    ; 24.156 ;
+; InData1[3] ; OutData[6]  ; 22.519 ;    ;    ; 22.519 ;
+; InData1[3] ; OutData[7]  ; 18.591 ;    ;    ; 18.591 ;
+; InData1[4] ; OutData[0]  ; 16.403 ;    ;    ; 16.403 ;
+; InData1[4] ; OutData[1]  ; 15.106 ;    ;    ; 15.106 ;
+; InData1[4] ; OutData[2]  ; 22.504 ;    ;    ; 22.504 ;
+; InData1[4] ; OutData[3]  ; 11.583 ;    ;    ; 11.583 ;
+; InData1[4] ; OutData[4]  ; 17.163 ;    ;    ; 17.163 ;
+; InData1[4] ; OutData[5]  ; 20.858 ;    ;    ; 20.858 ;
+; InData1[4] ; OutData[6]  ; 19.221 ;    ;    ; 19.221 ;
+; InData1[4] ; OutData[7]  ; 16.236 ;    ;    ; 16.236 ;
+; InData1[5] ; OutData[0]  ; 17.011 ;    ;    ; 17.011 ;
+; InData1[5] ; OutData[1]  ; 19.420 ;    ;    ; 19.420 ;
+; InData1[5] ; OutData[2]  ; 17.833 ;    ;    ; 17.833 ;
+; InData1[5] ; OutData[3]  ; 17.108 ;    ;    ; 17.108 ;
+; InData1[5] ; OutData[4]  ; 19.014 ;    ;    ; 19.014 ;
+; InData1[5] ; OutData[5]  ; 20.441 ;    ;    ; 20.441 ;
+; InData1[5] ; OutData[6]  ; 18.395 ;    ;    ; 18.395 ;
+; InData1[5] ; OutData[7]  ; 18.119 ;    ;    ; 18.119 ;
+; InData1[6] ; OutData[0]  ; 18.228 ;    ;    ; 18.228 ;
+; InData1[6] ; OutData[1]  ; 20.073 ;    ;    ; 20.073 ;
+; InData1[6] ; OutData[2]  ; 27.471 ;    ;    ; 27.471 ;
+; InData1[6] ; OutData[3]  ; 15.194 ;    ;    ; 15.194 ;
+; InData1[6] ; OutData[4]  ; 18.988 ;    ;    ; 18.988 ;
+; InData1[6] ; OutData[5]  ; 13.508 ;    ;    ; 13.508 ;
+; InData1[6] ; OutData[6]  ; 17.970 ;    ;    ; 17.970 ;
+; InData1[6] ; OutData[7]  ; 17.330 ;    ;    ; 17.330 ;
+; InData1[7] ; OutData[0]  ; 16.398 ;    ;    ; 16.398 ;
+; InData1[7] ; OutData[1]  ; 18.807 ;    ;    ; 18.807 ;
+; InData1[7] ; OutData[2]  ; 17.178 ;    ;    ; 17.178 ;
+; InData1[7] ; OutData[3]  ; 16.453 ;    ;    ; 16.453 ;
+; InData1[7] ; OutData[4]  ; 17.431 ;    ;    ; 17.431 ;
+; InData1[7] ; OutData[5]  ; 18.536 ;    ;    ; 18.536 ;
+; InData1[7] ; OutData[6]  ; 16.082 ;    ;    ; 16.082 ;
+; InData1[7] ; OutData[7]  ; 13.400 ;    ;    ; 13.400 ;
+; InData2[0] ; OutData[0]  ; 12.226 ;    ;    ; 12.226 ;
+; InData2[0] ; OutData[1]  ; 17.366 ;    ;    ; 17.366 ;
+; InData2[0] ; OutData[2]  ; 25.628 ;    ;    ; 25.628 ;
+; InData2[0] ; OutData[3]  ; 17.938 ;    ;    ; 17.938 ;
+; InData2[0] ; OutData[4]  ; 19.518 ;    ;    ; 19.518 ;
+; InData2[0] ; OutData[5]  ; 24.635 ;    ;    ; 24.635 ;
+; InData2[0] ; OutData[6]  ; 22.998 ;    ;    ; 22.998 ;
+; InData2[0] ; OutData[7]  ; 19.070 ;    ;    ; 19.070 ;
+; InData2[1] ; OutData[0]  ; 15.952 ;    ;    ; 15.952 ;
+; InData2[1] ; OutData[1]  ; 18.361 ;    ;    ; 18.361 ;
+; InData2[1] ; OutData[2]  ; 25.588 ;    ;    ; 25.588 ;
+; InData2[1] ; OutData[3]  ; 17.898 ;    ;    ; 17.898 ;
+; InData2[1] ; OutData[4]  ; 19.478 ;    ;    ; 19.478 ;
+; InData2[1] ; OutData[5]  ; 24.595 ;    ;    ; 24.595 ;
+; InData2[1] ; OutData[6]  ; 22.958 ;    ;    ; 22.958 ;
+; InData2[1] ; OutData[7]  ; 19.030 ;    ;    ; 19.030 ;
+; InData2[2] ; OutData[0]  ; 16.782 ;    ;    ; 16.782 ;
+; InData2[2] ; OutData[1]  ; 19.526 ;    ;    ; 19.526 ;
+; InData2[2] ; OutData[2]  ; 26.924 ;    ;    ; 26.924 ;
+; InData2[2] ; OutData[3]  ; 19.317 ;    ;    ; 19.317 ;
+; InData2[2] ; OutData[4]  ; 20.897 ;    ;    ; 20.897 ;
+; InData2[2] ; OutData[5]  ; 26.014 ;    ;    ; 26.014 ;
+; InData2[2] ; OutData[6]  ; 24.377 ;    ;    ; 24.377 ;
+; InData2[2] ; OutData[7]  ; 20.449 ;    ;    ; 20.449 ;
+; InData2[3] ; OutData[3]  ; 18.868 ;    ;    ; 18.868 ;
+; InData2[3] ; OutData[4]  ; 21.147 ;    ;    ; 21.147 ;
+; InData2[3] ; OutData[5]  ; 26.264 ;    ;    ; 26.264 ;
+; InData2[3] ; OutData[6]  ; 24.627 ;    ;    ; 24.627 ;
+; InData2[3] ; OutData[7]  ; 20.699 ;    ;    ; 20.699 ;
+; InData2[4] ; OutData[4]  ; 16.236 ;    ;    ; 16.236 ;
+; InData2[4] ; OutData[5]  ; 21.339 ;    ;    ; 21.339 ;
+; InData2[4] ; OutData[6]  ; 19.702 ;    ;    ; 19.702 ;
+; InData2[4] ; OutData[7]  ; 15.942 ;    ;    ; 15.942 ;
+; InData2[5] ; OutData[5]  ; 17.805 ;    ;    ; 17.805 ;
+; InData2[5] ; OutData[6]  ; 16.315 ;    ;    ; 16.315 ;
+; InData2[5] ; OutData[7]  ; 14.221 ;    ;    ; 14.221 ;
+; InData2[6] ; OutData[6]  ; 15.332 ;    ;    ; 15.332 ;
+; InData2[6] ; OutData[7]  ; 13.746 ;    ;    ; 13.746 ;
+; InData2[7] ; OutData[7]  ; 14.767 ;    ;    ; 14.767 ;
 +------------+-------------+--------+----+----+--------+
 
 
@@ -243,125 +244,125 @@ No paths to report.
 +------------+-------------+--------+----+----+--------+
 ; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
 +------------+-------------+--------+----+----+--------+
-; ALUop[0]   ; OutData[0]  ; 12.178 ;    ;    ; 12.178 ;
-; ALUop[0]   ; OutData[1]  ; 12.306 ;    ;    ; 12.306 ;
-; ALUop[0]   ; OutData[2]  ; 11.772 ;    ;    ; 11.772 ;
-; ALUop[0]   ; OutData[3]  ; 12.328 ;    ;    ; 12.328 ;
-; ALUop[0]   ; OutData[4]  ; 12.125 ;    ;    ; 12.125 ;
-; ALUop[0]   ; OutData[5]  ; 11.667 ;    ;    ; 11.667 ;
-; ALUop[0]   ; OutData[6]  ; 12.089 ;    ;    ; 12.089 ;
-; ALUop[0]   ; OutData[7]  ; 12.512 ;    ;    ; 12.512 ;
-; ALUop[1]   ; OutData[0]  ; 11.994 ;    ;    ; 11.994 ;
-; ALUop[1]   ; OutData[1]  ; 11.575 ;    ;    ; 11.575 ;
-; ALUop[1]   ; OutData[2]  ; 11.037 ;    ;    ; 11.037 ;
-; ALUop[1]   ; OutData[3]  ; 11.024 ;    ;    ; 11.024 ;
-; ALUop[1]   ; OutData[4]  ; 11.373 ;    ;    ; 11.373 ;
-; ALUop[1]   ; OutData[5]  ; 11.363 ;    ;    ; 11.363 ;
-; ALUop[1]   ; OutData[6]  ; 11.342 ;    ;    ; 11.342 ;
-; ALUop[1]   ; OutData[7]  ; 12.450 ;    ;    ; 12.450 ;
-; InData1[0] ; OutData[0]  ; 13.593 ;    ;    ; 13.593 ;
-; InData1[0] ; OutData[1]  ; 15.381 ;    ;    ; 15.381 ;
-; InData1[0] ; OutData[2]  ; 16.910 ;    ;    ; 16.910 ;
-; InData1[0] ; OutData[3]  ; 17.932 ;    ;    ; 17.932 ;
-; InData1[0] ; OutData[4]  ; 18.185 ;    ;    ; 18.185 ;
-; InData1[0] ; OutData[5]  ; 18.375 ;    ;    ; 18.375 ;
-; InData1[0] ; OutData[6]  ; 18.505 ;    ;    ; 18.505 ;
-; InData1[0] ; OutData[7]  ; 18.392 ;    ;    ; 18.392 ;
-; InData1[1] ; OutData[0]  ; 16.997 ;    ;    ; 16.997 ;
-; InData1[1] ; OutData[1]  ; 16.803 ;    ;    ; 16.803 ;
-; InData1[1] ; OutData[2]  ; 15.568 ;    ;    ; 15.568 ;
-; InData1[1] ; OutData[3]  ; 16.895 ;    ;    ; 16.895 ;
-; InData1[1] ; OutData[4]  ; 16.663 ;    ;    ; 16.663 ;
-; InData1[1] ; OutData[5]  ; 17.033 ;    ;    ; 17.033 ;
-; InData1[1] ; OutData[6]  ; 17.163 ;    ;    ; 17.163 ;
-; InData1[1] ; OutData[7]  ; 17.050 ;    ;    ; 17.050 ;
-; InData1[2] ; OutData[0]  ; 16.577 ;    ;    ; 16.577 ;
-; InData1[2] ; OutData[1]  ; 16.853 ;    ;    ; 16.853 ;
-; InData1[2] ; OutData[2]  ; 13.347 ;    ;    ; 13.347 ;
-; InData1[2] ; OutData[3]  ; 15.426 ;    ;    ; 15.426 ;
-; InData1[2] ; OutData[4]  ; 14.761 ;    ;    ; 14.761 ;
-; InData1[2] ; OutData[5]  ; 15.564 ;    ;    ; 15.564 ;
-; InData1[2] ; OutData[6]  ; 15.694 ;    ;    ; 15.694 ;
-; InData1[2] ; OutData[7]  ; 15.581 ;    ;    ; 15.581 ;
-; InData1[3] ; OutData[0]  ; 20.776 ;    ;    ; 20.776 ;
-; InData1[3] ; OutData[1]  ; 22.484 ;    ;    ; 22.484 ;
-; InData1[3] ; OutData[2]  ; 16.824 ;    ;    ; 16.824 ;
-; InData1[3] ; OutData[3]  ; 14.551 ;    ;    ; 14.551 ;
-; InData1[3] ; OutData[4]  ; 15.499 ;    ;    ; 15.499 ;
-; InData1[3] ; OutData[5]  ; 15.441 ;    ;    ; 15.441 ;
-; InData1[3] ; OutData[6]  ; 15.336 ;    ;    ; 15.336 ;
-; InData1[3] ; OutData[7]  ; 15.458 ;    ;    ; 15.458 ;
-; InData1[4] ; OutData[0]  ; 15.716 ;    ;    ; 15.716 ;
-; InData1[4] ; OutData[1]  ; 14.867 ;    ;    ; 14.867 ;
-; InData1[4] ; OutData[2]  ; 16.169 ;    ;    ; 16.169 ;
-; InData1[4] ; OutData[3]  ; 15.925 ;    ;    ; 15.925 ;
-; InData1[4] ; OutData[4]  ; 14.753 ;    ;    ; 14.753 ;
-; InData1[4] ; OutData[5]  ; 15.145 ;    ;    ; 15.145 ;
-; InData1[4] ; OutData[6]  ; 15.275 ;    ;    ; 15.275 ;
-; InData1[4] ; OutData[7]  ; 15.162 ;    ;    ; 15.162 ;
-; InData1[5] ; OutData[0]  ; 16.296 ;    ;    ; 16.296 ;
-; InData1[5] ; OutData[1]  ; 18.004 ;    ;    ; 18.004 ;
-; InData1[5] ; OutData[2]  ; 15.082 ;    ;    ; 15.082 ;
-; InData1[5] ; OutData[3]  ; 20.321 ;    ;    ; 20.321 ;
-; InData1[5] ; OutData[4]  ; 20.378 ;    ;    ; 20.378 ;
-; InData1[5] ; OutData[5]  ; 14.617 ;    ;    ; 14.617 ;
-; InData1[5] ; OutData[6]  ; 15.554 ;    ;    ; 15.554 ;
-; InData1[5] ; OutData[7]  ; 15.552 ;    ;    ; 15.552 ;
-; InData1[6] ; OutData[0]  ; 14.990 ;    ;    ; 14.990 ;
-; InData1[6] ; OutData[1]  ; 18.791 ;    ;    ; 18.791 ;
-; InData1[6] ; OutData[2]  ; 20.093 ;    ;    ; 20.093 ;
-; InData1[6] ; OutData[3]  ; 17.635 ;    ;    ; 17.635 ;
-; InData1[6] ; OutData[4]  ; 19.834 ;    ;    ; 19.834 ;
-; InData1[6] ; OutData[5]  ; 12.677 ;    ;    ; 12.677 ;
-; InData1[6] ; OutData[6]  ; 15.172 ;    ;    ; 15.172 ;
-; InData1[6] ; OutData[7]  ; 15.922 ;    ;    ; 15.922 ;
-; InData1[7] ; OutData[0]  ; 19.097 ;    ;    ; 19.097 ;
-; InData1[7] ; OutData[1]  ; 20.805 ;    ;    ; 20.805 ;
-; InData1[7] ; OutData[2]  ; 15.145 ;    ;    ; 15.145 ;
-; InData1[7] ; OutData[3]  ; 20.384 ;    ;    ; 20.384 ;
-; InData1[7] ; OutData[4]  ; 19.926 ;    ;    ; 19.926 ;
-; InData1[7] ; OutData[5]  ; 21.388 ;    ;    ; 21.388 ;
-; InData1[7] ; OutData[6]  ; 17.752 ;    ;    ; 17.752 ;
-; InData1[7] ; OutData[7]  ; 14.557 ;    ;    ; 14.557 ;
-; InData2[0] ; OutData[0]  ; 12.161 ;    ;    ; 12.161 ;
-; InData2[0] ; OutData[1]  ; 17.067 ;    ;    ; 17.067 ;
-; InData2[0] ; OutData[2]  ; 14.539 ;    ;    ; 14.539 ;
-; InData2[0] ; OutData[3]  ; 17.766 ;    ;    ; 17.766 ;
-; InData2[0] ; OutData[4]  ; 18.298 ;    ;    ; 18.298 ;
-; InData2[0] ; OutData[5]  ; 14.350 ;    ;    ; 14.350 ;
-; InData2[0] ; OutData[6]  ; 17.774 ;    ;    ; 17.774 ;
-; InData2[0] ; OutData[7]  ; 15.442 ;    ;    ; 15.442 ;
-; InData2[1] ; OutData[0]  ; 15.150 ;    ;    ; 15.150 ;
-; InData2[1] ; OutData[1]  ; 16.340 ;    ;    ; 16.340 ;
-; InData2[1] ; OutData[2]  ; 14.225 ;    ;    ; 14.225 ;
-; InData2[1] ; OutData[3]  ; 17.184 ;    ;    ; 17.184 ;
-; InData2[1] ; OutData[4]  ; 16.803 ;    ;    ; 16.803 ;
-; InData2[1] ; OutData[5]  ; 17.147 ;    ;    ; 17.147 ;
-; InData2[1] ; OutData[6]  ; 17.299 ;    ;    ; 17.299 ;
-; InData2[1] ; OutData[7]  ; 17.339 ;    ;    ; 17.339 ;
-; InData2[2] ; OutData[0]  ; 14.331 ;    ;    ; 14.331 ;
-; InData2[2] ; OutData[1]  ; 16.920 ;    ;    ; 16.920 ;
-; InData2[2] ; OutData[2]  ; 13.898 ;    ;    ; 13.898 ;
-; InData2[2] ; OutData[3]  ; 15.921 ;    ;    ; 15.921 ;
-; InData2[2] ; OutData[4]  ; 16.193 ;    ;    ; 16.193 ;
-; InData2[2] ; OutData[5]  ; 16.059 ;    ;    ; 16.059 ;
-; InData2[2] ; OutData[6]  ; 16.189 ;    ;    ; 16.189 ;
-; InData2[2] ; OutData[7]  ; 16.076 ;    ;    ; 16.076 ;
-; InData2[3] ; OutData[3]  ; 15.032 ;    ;    ; 15.032 ;
-; InData2[3] ; OutData[4]  ; 16.240 ;    ;    ; 16.240 ;
-; InData2[3] ; OutData[5]  ; 15.866 ;    ;    ; 15.866 ;
-; InData2[3] ; OutData[6]  ; 15.996 ;    ;    ; 15.996 ;
-; InData2[3] ; OutData[7]  ; 15.883 ;    ;    ; 15.883 ;
-; InData2[4] ; OutData[4]  ; 16.899 ;    ;    ; 16.899 ;
-; InData2[4] ; OutData[5]  ; 17.240 ;    ;    ; 17.240 ;
-; InData2[4] ; OutData[6]  ; 17.370 ;    ;    ; 17.370 ;
-; InData2[4] ; OutData[7]  ; 17.257 ;    ;    ; 17.257 ;
-; InData2[5] ; OutData[5]  ; 14.293 ;    ;    ; 14.293 ;
-; InData2[5] ; OutData[6]  ; 15.286 ;    ;    ; 15.286 ;
-; InData2[5] ; OutData[7]  ; 15.284 ;    ;    ; 15.284 ;
-; InData2[6] ; OutData[6]  ; 15.423 ;    ;    ; 15.423 ;
-; InData2[6] ; OutData[7]  ; 15.893 ;    ;    ; 15.893 ;
-; InData2[7] ; OutData[7]  ; 14.173 ;    ;    ; 14.173 ;
+; ALUop[0]   ; OutData[0]  ; 13.838 ;    ;    ; 13.838 ;
+; ALUop[0]   ; OutData[1]  ; 12.184 ;    ;    ; 12.184 ;
+; ALUop[0]   ; OutData[2]  ; 12.214 ;    ;    ; 12.214 ;
+; ALUop[0]   ; OutData[3]  ; 11.234 ;    ;    ; 11.234 ;
+; ALUop[0]   ; OutData[4]  ; 10.584 ;    ;    ; 10.584 ;
+; ALUop[0]   ; OutData[5]  ; 12.091 ;    ;    ; 12.091 ;
+; ALUop[0]   ; OutData[6]  ; 11.711 ;    ;    ; 11.711 ;
+; ALUop[0]   ; OutData[7]  ; 10.157 ;    ;    ; 10.157 ;
+; ALUop[1]   ; OutData[0]  ; 9.542  ;    ;    ; 9.542  ;
+; ALUop[1]   ; OutData[1]  ; 10.324 ;    ;    ; 10.324 ;
+; ALUop[1]   ; OutData[2]  ; 10.022 ;    ;    ; 10.022 ;
+; ALUop[1]   ; OutData[3]  ; 9.373  ;    ;    ; 9.373  ;
+; ALUop[1]   ; OutData[4]  ; 8.896  ;    ;    ; 8.896  ;
+; ALUop[1]   ; OutData[5]  ; 9.885  ;    ;    ; 9.885  ;
+; ALUop[1]   ; OutData[6]  ; 10.041 ;    ;    ; 10.041 ;
+; ALUop[1]   ; OutData[7]  ; 7.381  ;    ;    ; 7.381  ;
+; InData1[0] ; OutData[0]  ; 9.063  ;    ;    ; 9.063  ;
+; InData1[0] ; OutData[1]  ; 14.980 ;    ;    ; 14.980 ;
+; InData1[0] ; OutData[2]  ; 16.628 ;    ;    ; 16.628 ;
+; InData1[0] ; OutData[3]  ; 15.426 ;    ;    ; 15.426 ;
+; InData1[0] ; OutData[4]  ; 13.944 ;    ;    ; 13.944 ;
+; InData1[0] ; OutData[5]  ; 16.602 ;    ;    ; 16.602 ;
+; InData1[0] ; OutData[6]  ; 15.945 ;    ;    ; 15.945 ;
+; InData1[0] ; OutData[7]  ; 15.139 ;    ;    ; 15.139 ;
+; InData1[1] ; OutData[0]  ; 16.353 ;    ;    ; 16.353 ;
+; InData1[1] ; OutData[1]  ; 15.260 ;    ;    ; 15.260 ;
+; InData1[1] ; OutData[2]  ; 14.937 ;    ;    ; 14.937 ;
+; InData1[1] ; OutData[3]  ; 14.753 ;    ;    ; 14.753 ;
+; InData1[1] ; OutData[4]  ; 14.359 ;    ;    ; 14.359 ;
+; InData1[1] ; OutData[5]  ; 14.911 ;    ;    ; 14.911 ;
+; InData1[1] ; OutData[6]  ; 15.433 ;    ;    ; 15.433 ;
+; InData1[1] ; OutData[7]  ; 13.448 ;    ;    ; 13.448 ;
+; InData1[2] ; OutData[0]  ; 15.333 ;    ;    ; 15.333 ;
+; InData1[2] ; OutData[1]  ; 19.151 ;    ;    ; 19.151 ;
+; InData1[2] ; OutData[2]  ; 14.343 ;    ;    ; 14.343 ;
+; InData1[2] ; OutData[3]  ; 14.855 ;    ;    ; 14.855 ;
+; InData1[2] ; OutData[4]  ; 12.884 ;    ;    ; 12.884 ;
+; InData1[2] ; OutData[5]  ; 15.013 ;    ;    ; 15.013 ;
+; InData1[2] ; OutData[6]  ; 15.535 ;    ;    ; 15.535 ;
+; InData1[2] ; OutData[7]  ; 13.550 ;    ;    ; 13.550 ;
+; InData1[3] ; OutData[0]  ; 16.465 ;    ;    ; 16.465 ;
+; InData1[3] ; OutData[1]  ; 18.874 ;    ;    ; 18.874 ;
+; InData1[3] ; OutData[2]  ; 17.245 ;    ;    ; 17.245 ;
+; InData1[3] ; OutData[3]  ; 14.834 ;    ;    ; 14.834 ;
+; InData1[3] ; OutData[4]  ; 13.843 ;    ;    ; 13.843 ;
+; InData1[3] ; OutData[5]  ; 15.688 ;    ;    ; 15.688 ;
+; InData1[3] ; OutData[6]  ; 15.863 ;    ;    ; 15.863 ;
+; InData1[3] ; OutData[7]  ; 14.225 ;    ;    ; 14.225 ;
+; InData1[4] ; OutData[0]  ; 16.403 ;    ;    ; 16.403 ;
+; InData1[4] ; OutData[1]  ; 15.106 ;    ;    ; 15.106 ;
+; InData1[4] ; OutData[2]  ; 22.504 ;    ;    ; 22.504 ;
+; InData1[4] ; OutData[3]  ; 11.583 ;    ;    ; 11.583 ;
+; InData1[4] ; OutData[4]  ; 12.442 ;    ;    ; 12.442 ;
+; InData1[4] ; OutData[5]  ; 13.170 ;    ;    ; 13.170 ;
+; InData1[4] ; OutData[6]  ; 13.692 ;    ;    ; 13.692 ;
+; InData1[4] ; OutData[7]  ; 11.707 ;    ;    ; 11.707 ;
+; InData1[5] ; OutData[0]  ; 17.011 ;    ;    ; 17.011 ;
+; InData1[5] ; OutData[1]  ; 19.420 ;    ;    ; 19.420 ;
+; InData1[5] ; OutData[2]  ; 17.833 ;    ;    ; 17.833 ;
+; InData1[5] ; OutData[3]  ; 17.108 ;    ;    ; 17.108 ;
+; InData1[5] ; OutData[4]  ; 19.014 ;    ;    ; 19.014 ;
+; InData1[5] ; OutData[5]  ; 13.784 ;    ;    ; 13.784 ;
+; InData1[5] ; OutData[6]  ; 15.169 ;    ;    ; 15.169 ;
+; InData1[5] ; OutData[7]  ; 13.295 ;    ;    ; 13.295 ;
+; InData1[6] ; OutData[0]  ; 18.228 ;    ;    ; 18.228 ;
+; InData1[6] ; OutData[1]  ; 20.073 ;    ;    ; 20.073 ;
+; InData1[6] ; OutData[2]  ; 27.471 ;    ;    ; 27.471 ;
+; InData1[6] ; OutData[3]  ; 15.194 ;    ;    ; 15.194 ;
+; InData1[6] ; OutData[4]  ; 18.988 ;    ;    ; 18.988 ;
+; InData1[6] ; OutData[5]  ; 13.508 ;    ;    ; 13.508 ;
+; InData1[6] ; OutData[6]  ; 15.449 ;    ;    ; 15.449 ;
+; InData1[6] ; OutData[7]  ; 14.265 ;    ;    ; 14.265 ;
+; InData1[7] ; OutData[0]  ; 16.398 ;    ;    ; 16.398 ;
+; InData1[7] ; OutData[1]  ; 18.807 ;    ;    ; 18.807 ;
+; InData1[7] ; OutData[2]  ; 17.178 ;    ;    ; 17.178 ;
+; InData1[7] ; OutData[3]  ; 16.453 ;    ;    ; 16.453 ;
+; InData1[7] ; OutData[4]  ; 17.431 ;    ;    ; 17.431 ;
+; InData1[7] ; OutData[5]  ; 18.536 ;    ;    ; 18.536 ;
+; InData1[7] ; OutData[6]  ; 16.082 ;    ;    ; 16.082 ;
+; InData1[7] ; OutData[7]  ; 10.945 ;    ;    ; 10.945 ;
+; InData2[0] ; OutData[0]  ; 10.008 ;    ;    ; 10.008 ;
+; InData2[0] ; OutData[1]  ; 14.206 ;    ;    ; 14.206 ;
+; InData2[0] ; OutData[2]  ; 13.856 ;    ;    ; 13.856 ;
+; InData2[0] ; OutData[3]  ; 13.595 ;    ;    ; 13.595 ;
+; InData2[0] ; OutData[4]  ; 14.624 ;    ;    ; 14.624 ;
+; InData2[0] ; OutData[5]  ; 12.871 ;    ;    ; 12.871 ;
+; InData2[0] ; OutData[6]  ; 15.432 ;    ;    ; 15.432 ;
+; InData2[0] ; OutData[7]  ; 10.926 ;    ;    ; 10.926 ;
+; InData2[1] ; OutData[0]  ; 15.193 ;    ;    ; 15.193 ;
+; InData2[1] ; OutData[1]  ; 13.619 ;    ;    ; 13.619 ;
+; InData2[1] ; OutData[2]  ; 13.992 ;    ;    ; 13.992 ;
+; InData2[1] ; OutData[3]  ; 13.474 ;    ;    ; 13.474 ;
+; InData2[1] ; OutData[4]  ; 12.744 ;    ;    ; 12.744 ;
+; InData2[1] ; OutData[5]  ; 13.966 ;    ;    ; 13.966 ;
+; InData2[1] ; OutData[6]  ; 14.488 ;    ;    ; 14.488 ;
+; InData2[1] ; OutData[7]  ; 12.503 ;    ;    ; 12.503 ;
+; InData2[2] ; OutData[0]  ; 14.949 ;    ;    ; 14.949 ;
+; InData2[2] ; OutData[1]  ; 17.161 ;    ;    ; 17.161 ;
+; InData2[2] ; OutData[2]  ; 14.718 ;    ;    ; 14.718 ;
+; InData2[2] ; OutData[3]  ; 13.073 ;    ;    ; 13.073 ;
+; InData2[2] ; OutData[4]  ; 13.442 ;    ;    ; 13.442 ;
+; InData2[2] ; OutData[5]  ; 15.444 ;    ;    ; 15.444 ;
+; InData2[2] ; OutData[6]  ; 15.865 ;    ;    ; 15.865 ;
+; InData2[2] ; OutData[7]  ; 13.981 ;    ;    ; 13.981 ;
+; InData2[3] ; OutData[3]  ; 14.587 ;    ;    ; 14.587 ;
+; InData2[3] ; OutData[4]  ; 15.535 ;    ;    ; 15.535 ;
+; InData2[3] ; OutData[5]  ; 15.497 ;    ;    ; 15.497 ;
+; InData2[3] ; OutData[6]  ; 16.019 ;    ;    ; 16.019 ;
+; InData2[3] ; OutData[7]  ; 14.034 ;    ;    ; 14.034 ;
+; InData2[4] ; OutData[4]  ; 13.728 ;    ;    ; 13.728 ;
+; InData2[4] ; OutData[5]  ; 14.405 ;    ;    ; 14.405 ;
+; InData2[4] ; OutData[6]  ; 14.927 ;    ;    ; 14.927 ;
+; InData2[4] ; OutData[7]  ; 12.942 ;    ;    ; 12.942 ;
+; InData2[5] ; OutData[5]  ; 12.325 ;    ;    ; 12.325 ;
+; InData2[5] ; OutData[6]  ; 13.654 ;    ;    ; 13.654 ;
+; InData2[5] ; OutData[7]  ; 11.780 ;    ;    ; 11.780 ;
+; InData2[6] ; OutData[6]  ; 13.044 ;    ;    ; 13.044 ;
+; InData2[6] ; OutData[7]  ; 11.866 ;    ;    ; 11.866 ;
+; InData2[7] ; OutData[7]  ; 11.735 ;    ;    ; 11.735 ;
 +------------+-------------+--------+----+----+--------+
 
 
@@ -380,7 +381,7 @@ No dedicated SERDES Transmitter circuitry present in device or used in design
 ---------------
 ; Report RSKM ;
 ---------------
-No dedicated SERDES Receiver circuitry present in device or used in design
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
 
 
 +------------------------------------------------+
@@ -401,11 +402,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
-    Info: Version 12.0 Build 178 05/31/2012 SJ Web Edition
-    Info: Processing started: Wed Feb 17 18:48:23 2016
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+    Info: Processing started: Wed Mar  2 14:50:02 2016
 Info: Command: quartus_sta ALU -c ALU
-Info: qsta_default_script.tcl version: #4
+Info: qsta_default_script.tcl version: #3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -418,6 +419,7 @@ Warning (332068): No clocks defined in design.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info (332159): No clocks to report
 Info (332140): No fmax paths to report
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -426,10 +428,10 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 296 megabytes
-    Info: Processing ended: Wed Feb 17 18:48:25 2016
-    Info: Elapsed time: 00:00:02
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 699 megabytes
+    Info: Processing ended: Wed Mar  2 14:50:03 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,6 +1,6 @@
 Flow report for ALU
-Wed Feb 17 18:48:28 2016
-Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Web Edition
+Wed Mar  2 14:50:07 2016
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
 ---------------------
@@ -13,43 +13,46 @@ Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Web Edition
   5. Flow Elapsed Time
   6. Flow OS Summary
   7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2012 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
-+----------------------------------------------------------------------+
-; Flow Summary                                                         ;
-+---------------------------+------------------------------------------+
-; Flow Status               ; Successful - Wed Feb 17 18:48:28 2016    ;
-; Quartus II 32-bit Version ; 12.0 Build 178 05/31/2012 SJ Web Edition ;
-; Revision Name             ; ALU                                      ;
-; Top-level Entity Name     ; alu                                      ;
-; Family                    ; MAX V                                    ;
-; Device                    ; 5M1270ZT144C5                            ;
-; Timing Models             ; Final                                    ;
-; Total logic elements      ; 88 / 1,270 ( 7 % )                       ;
-; Total pins                ; 26 / 114 ( 23 % )                        ;
-; Total virtual pins        ; 0                                        ;
-; UFM blocks                ; 0 / 1 ( 0 % )                            ;
-+---------------------------+------------------------------------------+
++------------------------------------------------------------------------+
+; Flow Summary                                                           ;
++---------------------------+--------------------------------------------+
+; Flow Status               ; Successful - Wed Mar  2 14:50:07 2016      ;
+; Quartus II 64-Bit Version ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
+; Revision Name             ; ALU                                        ;
+; Top-level Entity Name     ; alu                                        ;
+; Family                    ; MAX V                                      ;
+; Device                    ; 5M1270ZT144C5                              ;
+; Timing Models             ; Final                                      ;
+; Total logic elements      ; 88 / 1,270 ( 7 % )                         ;
+; Total pins                ; 26 / 114 ( 23 % )                          ;
+; Total virtual pins        ; 0                                          ;
+; UFM blocks                ; 0 / 1 ( 0 % )                              ;
++---------------------------+--------------------------------------------+
 
 
 +-----------------------------------------+
@@ -57,7 +60,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/17/2016 18:48:16 ;
+; Start date & time ; 03/02/2016 14:49:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+
@@ -68,7 +71,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 123633795166480.145571509617416 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 123633795166480.145691037310974 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; test_alu       ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test_alu                        ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                            ; --            ; --          ; eda_simulation ;
@@ -88,26 +91,26 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; --                  ; 00:00:02                           ;
-; Fitter                    ; 00:00:02     ; 1.0                     ; --                  ; 00:00:02                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; --                  ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; --                  ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; --                  ; 00:00:01                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:07                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 920 MB              ; 00:00:40                           ;
+; Fitter                    ; 00:00:02     ; 1.0                     ; 904 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 757 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 699 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1007 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:45                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                               ;
-+---------------------------+------------------+------------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name          ; OS Version ; Processor type ;
-+---------------------------+------------------+------------------+------------+----------------+
-; Analysis & Synthesis      ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
-; Fitter                    ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
-; Assembler                 ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
-; TimeQuest Timing Analyzer ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
-; EDA Netlist Writer        ; matt             ; Debian GNU/Linux ; 8          ; x86_64         ;
-+---------------------------+------------------+------------------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
+; Fitter                    ; jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
+; Assembler                 ; jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
+; TimeQuest Timing Analyzer ; jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
+; EDA Netlist Writer        ; jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------

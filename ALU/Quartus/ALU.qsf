@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE 5M1270ZT144C5
 set_global_assignment -name TOP_LEVEL_ENTITY ALU
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:39:56  FEBRUARY 17, 2016"
-set_global_assignment -name LAST_QUARTUS_VERSION 12.0
+set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
 set_global_assignment -name VHDL_FILE ../rShift/mux.vhd
 set_global_assignment -name VHDL_FILE ../rShift/rshift.vhd
 set_global_assignment -name VHDL_FILE ../lShift/lshift.vhd

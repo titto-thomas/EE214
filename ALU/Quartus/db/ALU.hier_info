@@ -71,14 +71,14 @@ ALUop[1] => Equal0.IN0
 ALUop[1] => Equal1.IN0
 ALUop[1] => Equal2.IN1
 ALUop[1] => Equal3.IN0
-OutData[0] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
-OutData[1] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
-OutData[2] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
-OutData[3] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
-OutData[4] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
-OutData[5] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
-OutData[6] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
-OutData[7] <= OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[0] << OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[1] << OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[2] << OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[3] << OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[4] << OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[5] << OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[6] << OutData.DB_MAX_OUTPUT_PORT_TYPE
+OutData[7] << OutData.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|adder:adder_inst
