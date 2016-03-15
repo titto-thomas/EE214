@@ -1,6 +1,6 @@
 |TopLevel
 TDI => Scan_Chain:scan_instance.TDI
-TDO << Scan_Chain:scan_instance.TDO
+TDO <= Scan_Chain:scan_instance.TDO
 TMS => Scan_Chain:scan_instance.TMS
 TCLK => Scan_Chain:scan_instance.TCLK
 TRST => Scan_Chain:scan_instance.TRST

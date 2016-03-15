@@ -1,6 +1,6 @@
 EDA Netlist Writer report for TopLevel
-Fri Mar 11 13:29:11 2016
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Wed Mar 16 02:02:10 2016
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Web Edition
 
 
 ---------------------
@@ -17,27 +17,26 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2012 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Mar 11 13:29:11 2016 ;
+; EDA Netlist Writer Status ; Successful - Wed Mar 16 02:02:10 2016 ;
 ; Revision Name             ; TopLevel                              ;
 ; Top-level Entity Name     ; TopLevel                              ;
 ; Family                    ; MAX V                                 ;
@@ -67,28 +66,28 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                 ;
-+--------------------------------------------------------------------------------------------+
-; Generated Files                                                                            ;
-+--------------------------------------------------------------------------------------------+
-; /home/titto/Desktop/EE214/StringRecognizer/Scan_Chain/simulation/modelsim/TopLevel.vho     ;
-; /home/titto/Desktop/EE214/StringRecognizer/Scan_Chain/simulation/modelsim/TopLevel_vhd.sdo ;
-+--------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                            ;
++-------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                       ;
++-------------------------------------------------------------------------------------------------------+
+; /home/student/Downloads/EE214-master/StringRecognizer/Scan_Chain/simulation/modelsim/TopLevel.vho     ;
+; /home/student/Downloads/EE214-master/StringRecognizer/Scan_Chain/simulation/modelsim/TopLevel_vhd.sdo ;
++-------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Mar 11 13:29:10 2016
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 12.0 Build 178 05/31/2012 SJ Web Edition
+    Info: Processing started: Wed Mar 16 02:02:09 2016
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off TopLevel -c TopLevel
-Info (204018): Generated files "TopLevel.vho" and "TopLevel_vhd.sdo" in directory "/home/titto/Desktop/EE214/StringRecognizer/Scan_Chain/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1007 megabytes
-    Info: Processing ended: Fri Mar 11 13:29:11 2016
+Info (204018): Generated files "TopLevel.vho" and "TopLevel_vhd.sdo" in directory "/home/student/Downloads/EE214-master/StringRecognizer/Scan_Chain/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 314 megabytes
+    Info: Processing ended: Wed Mar 16 02:02:10 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

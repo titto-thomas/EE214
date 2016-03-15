@@ -127,17 +127,27 @@ begin
 
 reset <= '1';
 
-LINE_STRING1 := ("SDR 7 TDI(20) 1 TDO(0) MASK(F)"); 
+LINE_STRING1 := ("SDR 7 TDI(40) 1 TDO(0) MASK(0)"); 
 WRITE(LINE_NUM, LINE_STRING1);	--save results to line
 WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
 WRITE(LINE_NUM, LINE_STRING2);	--save results to line
 WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
-LINE_STRING1 := ("SDR 7 TDI(60) 1 TDO(0) MASK(F)"); 
+LINE_STRING1 := ("SDR 7 TDI(60) 1 TDO(0) MASK(0)"); 
 WRITE(LINE_NUM, LINE_STRING1);	--save results to line
 WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
 WRITE(LINE_NUM, LINE_STRING2);	--save results to line
 WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
-      		
+LINE_STRING1 := ("SDR 7 TDI(40) 1 TDO(0) MASK(0)"); 
+WRITE(LINE_NUM, LINE_STRING1);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+WRITE(LINE_NUM, LINE_STRING2);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+LINE_STRING1 := ("SDR 7 TDI(60) 1 TDO(0) MASK(1)"); 
+WRITE(LINE_NUM, LINE_STRING1);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+WRITE(LINE_NUM, LINE_STRING2);	--save results to line
+WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
+	
 wait for 220 ns;
 
 reset <= '0';
@@ -172,7 +182,7 @@ while not endfile(infile) loop
       		WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
 		WRITE(LINE_NUM, LINE_STRING2);	--save results to line
       		WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
-      		LINE_STRING1 := ("SDR 7 TDI(" & to_hstring(dumX2) & ") 1 TDO(" & to_hstring(dumW) & ") MASK(F)"); 
+      		LINE_STRING1 := ("SDR 7 TDI(" & to_hstring(dumX2) & ") 1 TDO(" & to_hstring(dumW) & ") MASK(1)"); 
 		WRITE(LINE_NUM, LINE_STRING1);	--save results to line
       		WRITELINE(OUT_FILE, LINE_NUM);   --write line to file
 		WRITE(LINE_NUM, LINE_STRING2);	--save results to line
@@ -182,7 +192,7 @@ while not endfile(infile) loop
 	write(outline, string_out);
 	writeline(outfile, outline);
 end loop;
-
+wait;
 end process checking;
 
 

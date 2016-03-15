@@ -1,8 +1,7 @@
 <sld_project_info>
-  <project>
-    <hash md5_digest_80b="ee2db8ee8a4d39889b53"/>
-  </project>
   <file_info>
-    <file device="5M1270ZT144C5" path="TopLevel.sof" usercode="0xFFFFFFFF"/>
+    <file checksum="0x0061BD63" device="5M1270ZT144C5" path="TopLevel.pof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <hub_info ir_width="0" node_count="0"/>
+  <node_info/>
 </sld_project_info>
